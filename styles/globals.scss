@@ -2,7 +2,12 @@ $primary: #006666;
 $second: #F7991C;
 $secondLight: #F0B516;
 
-
+@font-face {
+  font-family: "SF";
+  src: url('./fonts/SF-Pro-Display-Light.otf');
+  font-weight:300;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "SF";
@@ -57,6 +62,10 @@ p {
 img {
   max-width: 100%;
 
+}
+
+.border-round {
+  border-radius: 12px;
 }
 
 .color-second {
@@ -474,13 +483,13 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   color: #FFFFFF;
   cursor: pointer;
 
-  &.btn-send{
+  &.btn-send {
     background: transparent;
     border: 1px solid white;
     color: #555555;
   }
 
-  &.btn-block{
+  &.btn-block {
     width: 100%;
   }
 }
@@ -595,7 +604,6 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 }
 
 .contact {
- 
   position: relative;
 
   &::before {
@@ -609,7 +617,8 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     bottom: 0;
     z-index: -1;
   }
-  &::after{
+
+  &::after {
     background-image: url('/images/banner1.jpeg');
     opacity: 0.4;
     position: absolute;
@@ -695,8 +704,8 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
 
 .page-contract {
-  
-  .block-address{
+
+  .block-address {
     margin-top: 80px;
     margin-bottom: -200px;
     position: relative;
@@ -705,11 +714,121 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     border-top-left-radius: 40px;
     color: white;
 
-    h5{
+    h5 {
       font-size: 20px;
     }
-    p{
+
+    p {
       font-size: 16px;
+    }
+  }
+}
+
+.service-detail {
+  .service-detail-item {
+
+    .service-detail-inner {
+      display: flex;
+      gap: 40px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #F7991C;
+    }
+
+    &:last-child{
+    .service-detail-inner {
+      border: none
+
+    }
+  }
+
+    .service-detail-title {
+      cursor: pointer;
+
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: 300;
+
+
+    }
+
+    .service-detail-content {
+      display: none;
+      padding: 24px 0;
+    }
+
+    .service-detail-main {
+      flex: 1;
+
+      p {
+        margin-bottom: 12px;
+
+      }
+    }
+
+    .service-detail-image {
+      flex: 1;
+      img{
+      display: none;
+
+      }
+    }
+
+    .service-detail-plus {
+      height: 60px;
+      width: 60px;
+      position: relative;
+      margin-top: 16px;
+
+      &::after {
+        content: '';
+        height: 4px;
+        width: 60px;
+        position: absolute;
+        background: linear-gradient(90deg, #FCB912 0%, #F7991C 99.98%);
+        top: 27px;
+        left: 0;
+      }
+
+      &::before {
+        // content: '';
+        height: 60px;
+        width: 4px;
+        position: absolute;
+        background: linear-gradient(90deg, #FCB912 0%, #F7991C 99.98%);
+        top: 0px;
+        left: 30px;
+      }
+    }
+
+    &.active {
+      background: #F2F2F2;
+      .service-detail-plus {
+
+        &::before {
+          content: '';
+        }
+      }
+
+      .service-detail-title {
+        color: #FCB912;
+        font-weight: 500;
+      }
+
+      .service-detail-inner {
+        border: none;
+      }
+
+      .service-detail-content {
+        display: block;
+      }
+
+      .service-detail-image {
+        img{
+        display: block;
+
+        }
+      }
     }
   }
 }
