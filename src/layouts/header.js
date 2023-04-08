@@ -14,10 +14,10 @@ export default function Header({ tab, className }) {
                     <Link href='/gioi-thieu' className={tab == 'gioi-thieu' && "active"}>Giới thiệu</Link>
                 </li>
                 <li>
-                    <Link href='/dich-vu/te-bao-goc' className={tab == 'dich-vu' && "active"}>Tế bào gốc</Link>
+                    <Link href='/dich-vu/te-bao-goc' className={tab == 'dich-vu/te-bao-goc' && "active"}>Tế bào gốc</Link>
                 </li>
                 <li>
-                    <Link href='/dich-vu/vat-ly-tri-lieu' className={tab == 'dich-vu' && "active"}>Vật lý trị liệu</Link>
+                    <Link href='/dich-vu/vat-ly-tri-lieu' className={tab == 'dich-vu/vat-ly-tri-lieu' && "active"}>Vật lý trị liệu</Link>
                 </li><li>
                     <Link href='/video' className={tab == 'video' && "active"}>Video</Link>
                 </li><li>

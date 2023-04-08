@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Intro() {
     return <main className="page">
-        <Header tab="dich-vu" />
+        <Header tab="dich-vu/te-bao-goc" />
         <Banner left={<h4>Dịch vụ</h4>} />
 
         <Breadcrumb links={[
