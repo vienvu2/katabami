@@ -1,33 +1,40 @@
-export default function Header({tab}) {
-    return <div className="header">
-        <div className="container">
-            <div className="header-inner">
-                <div className="logo">
-                    <img src="/img/logo.svg" />
-                </div>
-                <div className="menu">
-                    <ul>
-                        <li>
-                            <a href='/' className={tab == '/' && "active"}>Trang chủ</a>
-                            <a href='/gioi-thieu'  className={tab == 'gioi-thieu' && "active"}>Giới thiệu</a>
-                            <a href='/dich-vu/te-bao-goc'>Tế bào gốc</a>
-                            <a href='/dich-vu/vat-ly-tri-lieu'>Vật lý trị liệu</a>
-                            <a href='/video'>Video</a>
-                            <a href='/tin-tuc'>Tin tức</a>
-                            <a href='/lien-he'>Liên hê</a>
-                        </li>
-                    </ul>
+import Link from "next/link";
 
-                </div>
-                <div className="action">
-                    <div className="">
-                        <a>Đăng ký tư vấn</a>
-                    </div>
-                    <div>
-                        CSKH
-                        <a>1900 100728</a>
-                    </div>
-                </div>
+export default function Header({ tab }) {
+    return <div className="header">
+        <div className="logo">
+            <img src="/img/logo.svg" />
+        </div>
+        <div className="menu">
+            <ul>
+                <li>
+                    <Link href='/' className={tab == '/' && "active"}>Trang chủ</Link>
+                </li>
+                <li>
+                    <Link href='/gioi-thieu' className={tab == 'gioi-thieu' && "active"}>Giới thiệu</Link>
+                </li>
+                <li>
+                    <Link href='/dich-vu/te-bao-goc' className={tab == 'dich-vu' && "active"}>Tế bào gốc</Link>
+                </li>
+                <li>
+                    <Link href='/dich-vu/vat-ly-tri-lieu' className={tab == 'dich-vu' && "active"}>Vật lý trị liệu</Link>
+                </li><li>
+                    <Link href='/video' className={tab == 'video' && "active"}>Video</Link>
+                </li><li>
+                    <Link href='/tin-tuc' className={tab == 'tin-tuc' && "active"}>Tin tức</Link>
+                </li><li>
+                    <Link href='/lien-he' className={tab == 'lien-he' && "active"}>Liên hệ</Link>
+                </li>
+            </ul>
+
+        </div>
+        <div className="action">
+            <div className="action-item">
+                <Link href='/'>Đăng ký tư vấn</Link>
+            </div>
+            <div className="action-item">
+                <p>CSKH</p>
+                <Link href="/">1900 100728</Link>
             </div>
         </div>
     </div>

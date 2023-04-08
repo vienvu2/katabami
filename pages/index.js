@@ -8,7 +8,17 @@ export default function Home() {
   return (
     <main className="page page-home">
       <Header tab="/" />
-      <Banner />
+      <Banner left={<>
+        <h5>KATABAMI CLINIC</h5>
+        <h3><strong>“Chiropractic -</strong>
+          công nghệ trị liệu
+          thần kinh cột sống
+          đột phá từ mỹ ”</h3>
+
+        <p>Trị liệu thần kinh cột sống hay còn gọi là công nghệ Chiropractic được xem là
+          phương pháp chỉ định đầu tiên (...)</p>
+
+        <button className="btn btn-primary">XEM CHI TIẾT</button></>} />
       <section className="home-cell-root py-8">
         <div className="container">
 
@@ -198,10 +208,10 @@ export default function Home() {
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
 
-             
+
                 <h5>Bệnh viêm khớp ngày càng
-                    trẻ hóa, giải pháp nào điều
-                    trị sớm?</h5>
+                  trẻ hóa, giải pháp nào điều
+                  trị sớm?</h5>
 
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên
