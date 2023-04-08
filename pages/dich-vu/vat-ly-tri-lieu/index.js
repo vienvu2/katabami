@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export default function Intro() {
     return <main className="page">
-        <Header tab="dich-vu/te-bao-goc" />
-        <Banner left={<h4>Tế bào gốc</h4>} />
+        <Header tab="dich-vu/vat-ly-tri-lieu" />
+        <Banner left={<h4>Vật lý trị liệu</h4>} />
 
         <Breadcrumb links={[
             {
@@ -20,8 +20,8 @@ export default function Intro() {
                 name: ' Dịch vụ'
             },
             {
-                link: '/dich-vu/te-bao-goc',
-                name: 'Tế bào gốc'
+                link: '/dich-vu/vat-ly-tri-lieu',
+                name: 'Vật lý trị liệu'
             },
 
         ]} />
