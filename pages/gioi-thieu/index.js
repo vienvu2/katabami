@@ -7,7 +7,7 @@ import Contact from "@/src/layouts/contact";
 export default function Home() {
   return (
     <main className="page page-home">
-      <Header tab="/" />
+      <Header tab="gioi-thieu" />
       <Banner />
       <section className="home-cell-root py-8">
         <div className="container">

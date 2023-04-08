@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({tab}) {
     return <div className="header">
         <div className="container">
             <div className="header-inner">
@@ -8,13 +8,13 @@ export default function Header() {
                 <div className="menu">
                     <ul>
                         <li>
-                            <a href='/' className="active">Trang chủ</a>
-                            <a href='/'>Giới thiệu</a>
-                            <a href='/'>Tế bào gốc</a>
-                            <a href='/'>Vật lý trị liệu</a>
-                            <a href='/'>Video</a>
-                            <a href='/'>Tin tức</a>
-                            <a href='/'>Liên hê</a>
+                            <a href='/' className={tab == '/' && "active"}>Trang chủ</a>
+                            <a href='/gioi-thieu'  className={tab == 'gioi-thieu' && "active"}>Giới thiệu</a>
+                            <a href='/dich-vu/te-bao-goc'>Tế bào gốc</a>
+                            <a href='/dich-vu/vat-ly-tri-lieu'>Vật lý trị liệu</a>
+                            <a href='/video'>Video</a>
+                            <a href='/tin-tuc'>Tin tức</a>
+                            <a href='/lien-he'>Liên hê</a>
                         </li>
                     </ul>
 
