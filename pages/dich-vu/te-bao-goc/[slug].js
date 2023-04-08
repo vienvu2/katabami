@@ -129,7 +129,7 @@ export default function Intro() {
                         <div className="product-item">
                             <img src="/images/banner1.jpeg" />
                             <Link href="/dich-vu/te-bao-goc/2132">
-                                <h5>CHIROPRACTIC – CÔNG NGHỆ
+                                <h5>CHIROPRACTIC - CÔNG NGHỆ
                                     TRỊ LIỆU THẦN KINH CỘT SỐNG</h5>
                             </Link>
 

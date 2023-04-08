@@ -48,7 +48,7 @@ export default function Intro() {
                             </div>
                             <div className="mb-1">
                                 <Link href="/dich-vu/te-bao-goc/2132">
-                                    <h5>CHIROPRACTIC – CÔNG NGHỆ
+                                    <h5>CHIROPRACTIC - CÔNG NGHỆ
                                         TRỊ LIỆU THẦN KINH CỘT SỐNG</h5>
                                 </Link>
                             </div>
