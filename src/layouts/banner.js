@@ -4,7 +4,7 @@ export default function Banner() {
             <div className="row">
                 <div className="col-md-3">
                     <h5>KATABAMI CLINIC</h5>
-                    <h3>“Chiropractic –
+                    <h3><strong>“Chiropractic -</strong>
                         công nghệ trị liệu
                         thần kinh cột sống
                         đột phá từ mỹ ”</h3>
@@ -15,7 +15,7 @@ export default function Banner() {
                     <button className="btn btn-primary">XEM CHI TIẾT</button>
                 </div>
                 <div className="col-md-9">
-                    <img  src="/images/banner1.jpeg"/>
+                    <img src="/images/banner1.jpeg" />
                 </div>
             </div>
         </div>

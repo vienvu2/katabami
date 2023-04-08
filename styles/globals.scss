@@ -2,8 +2,35 @@ $primary: #006666;
 $second: #F7991C;
 $secondLight: #F0B516;
 
+
+@font-face {
+  font-family: "SF";
+  src: url('./fonts/SF-Pro-Display-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF";
+  src: url('./fonts/SF-Pro-Display-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF";
+  src: url('./fonts/SF-Pro-Display-Medium.otf');
+  font-weight: 500;
+}
+
 html,
-body {}
+body {
+  font-size: 16px;
+  font-family: 'SF';
+  font-weight: normal;
+  // letter-spacing: -0.1px;
+  line-height: 1.4;
+}
 
 * {
   margin: 0;
@@ -13,20 +40,36 @@ body {}
 
 a {
   text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 img {
   max-width: 100%;
 }
 
-.text-center{
-  text-align: center!important;
+.text-center {
+  text-align: center !important;
 }
-.text-left{
-  text-align: left!important;
+
+.text-left {
+  text-align: left !important;
 }
-.text-right{
-  text-align: right!important;
+
+.text-right {
+  text-align: right !important;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: 500;
 }
 
 .row {
@@ -39,24 +82,181 @@ img {
 $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
 @each $col in $cols {
-  .col-md-#{$col} {
-    width: #{$col * 100/12 + '%'};
-    padding-left: 12px;
-    padding-right: 12px;
+
+
+  @media only screen and (min-width: 768px) {
+    .col-md-#{$col} {
+      width: #{$col * 100/12 + '%'};
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .col-#{$col} {
+      width: #{$col * 100/12 + '%'};
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+  }
+
+  .m-#{$col} {
+    margin: #{6 * $col +'px'}
+  }
+
+  .mt-#{$col} {
+    margin-top: #{6 * $col +'px'}
+  }
+
+  .mb-#{$col} {
+    margin-bottom: #{6 * $col +'px'}
+  }
+
+  .ml-#{$col} {
+    margin-left: #{6 * $col +'px'}
+  }
+
+  .mr-#{$col} {
+    margin-right: #{6 * $col +'px'}
+  }
+
+
+  .mx-#{$col} {
+    margin-left: #{6 * $col +'px'};
+    margin-right: #{6 * $col +'px'}
+  }
+
+  .my-#{$col} {
+    margin-top: #{6 * $col +'px'};
+    margin-bottom: #{6 * $col +'px'}
+  }
+
+
+
+  .p-#{$col} {
+    padding: #{6 * $col +'px'}
+  }
+
+  .pt-#{$col} {
+    padding-top: #{6 * $col +'px'}
+  }
+
+  .pb-#{$col} {
+    padding-bottom: #{6 * $col +'px'}
+  }
+
+  .pl-#{$col} {
+    padding-left: #{6 * $col +'px'}
+  }
+
+  .pr-#{$col} {
+    padding-right: #{6 * $col +'px'}
+  }
+
+
+  .px-#{$col} {
+    padding-left: #{6 * $col +'px'};
+    padding-right: #{6 * $col +'px'}
+  }
+
+  .py-#{$col} {
+    padding-top: #{6 * $col +'px'};
+    padding-bottom: #{6 * $col +'px'}
   }
 }
 
 
 
 
+.tabs {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #F0B516;
+  justify-content: space-between;
+
+  .tab {
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    color: #B3B3B3;
+    cursor: pointer;
+
+    &:hover {
+      color: #F7991C;
+
+    }
+
+    &.active {
+      border-bottom: 2px solid #F0B516;
+      color: #F7991C;
+    }
+  }
+}
+
+
+
 .container {
-  max-width: 1120px;
+  max-width: 1320px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.footer {
+  background: $primary;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  color: white;
+
+  .menu {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      color: #F7991C;
+      cursor: pointer;
+
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+
+      &.active {}
+    }
+  }
+
+  h4,
+  p {
+    margin-bottom: 6px;
+  }
+
+  .socials {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+    justify-content: center;
+  }
+
+  .copyright {
+    color: white;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    opacity: 0.8;
+  }
 }
 
 
@@ -86,13 +286,14 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
         a {
           padding: 24px 12px;
 
-          font-weight: 400;
+          font-weight: 500;
           font-size: 18px;
           line-height: 22px;
           color: #FFFFFF;
 
           &.active {
             color: $second;
+            font-weight: bold;
           }
         }
       }
@@ -123,7 +324,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
   h3 {
 
-    font-weight: 400;
+    font-weight: 500;
     font-size: 34px;
     margin-bottom: 24px;
     line-height: 41px;
@@ -160,21 +361,86 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
 .page {
   h3.title {
-
-    font-weight: 500;
+    font-weight: 700;
     font-size: 48px;
     line-height: 58px;
     color: #006666;
+    letter-spacing: -3px;
   }
-  p.desc{
+
+  h3.title-white {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+
+  p.desc {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    
-    color: #555555;}
+
+    color: #555555;
+  }
+
+  .bg-gray {
+    background: #F2F2F2;
+  }
+
+  .bg-primary {
+    background: linear-gradient(90deg, #FCB912 0%, #F7991C 100%);
+  }
 }
 
-.product-item{
-  h5{}
-  p{}
+.product-item {
+  h5 {
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #F7991C;
+  }
+
+  p {
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #555555;
+
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1px;
+
+  .image-grid-item {
+    background-size: cover;
+    position: relative;
+    background-position: center;
+  }
+
+  .image-grid-content {
+    min-height: 360px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 70px;
+
+
+    color: white;
+    font-size: 20px;
+    background: #0006;
+    opacity: 0;
+    transition: all 0.3s linear;
+
+    &:hover {
+      transition: all 0.3s linear;
+      opacity: 1;
+    }
+
+  }
 }
