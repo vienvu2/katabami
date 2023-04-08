@@ -42,21 +42,17 @@ export default function Footer() {
                             <h4>CHUYÊN KHOA</h4>
                             <div className="pl-2">
                                 <p>
-
                                     <a> Thoái hóa cột sống</a></p>
                                 <p>
                                     <a>
                                         Đau thần kinh tọa</a>
                                 </p>
                                 <p>
-
                                     <a>
                                         Thoát vị đĩa đệm</a>
                                 </p>
                                 <p>
-
-                                    <a>
-                                        Đau đầu, cổ, vai, gáy</a>
+                                    <a>  Đau đầu, cổ, vai, gáy</a>
                                 </p>
                             </div>
                         </div>
