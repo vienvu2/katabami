@@ -1,7 +1,10 @@
-export default function Breadcrumb() {
+import Link from "next/link";
+
+export default function Breadcrumb({ links = [] }) {
     return <div className="container"> <div className="breadcrumb">
-        <a className="breadcrumb-item">Trang chủ</a> |
-        <a className="breadcrumb-item">Giới thiệu</a>
+        {
+            links.map(a => <Link href={a.link} key={a.name} className="breadcrumb-item">{a.name}</Link>)
+        }
     </div>
     </div>
 }

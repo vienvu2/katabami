@@ -4,6 +4,7 @@ import Footer from "@/src/layouts/footer";
 import Header from "@/src/layouts/header";
 import Contact from "@/src/layouts/contact";
 import Breadcrumb from "@/src/components/breadcrumb";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,14 +12,23 @@ export default function Home() {
       <Header tab="gioi-thieu" />
       <Banner left={<h4>Giới thiệu</h4>} />
 
-      <Breadcrumb />
+      <Breadcrumb links={[
+        {
+          name: 'Trang chủ',
+          link: '/'
+        },
+        {
+          link: '/gioi-thieu',
+          name: ' Giới thiệu'
+        },
+
+      ]} />
 
       <section className="intro pt-8 pb-4">
         <div className="container">
           <div className="row">
             <div className="col-md-4 col-12 mb-4">
               <h3 className="title">Katabami <br /> Clinic</h3>
-
             </div>
             <div className="col-md-8 col-12  mb-4">
               “Sự hài lòng của người bệnh là trung tâm của mọi hoạt động, mọi cải tiến”
@@ -33,8 +43,18 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 col-12  mb-4">
-            </div>
+            {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
+              <div className="product-item">
+                <div className="mb-1">
+                  <img src="/images/banner1.jpeg" />
+                </div>
+                <Link href="/gioi-thieu/test">
+
+                  <h5>LỊCH SỬ HÌNH THÀNH VÀ PHÁT TRIỂN</h5>
+                </Link>
+              </div>
+            </div>)}
+
           </div>
         </div>
 

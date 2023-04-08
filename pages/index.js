@@ -106,7 +106,7 @@ export default function Home() {
           <div className="row mb-4">
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
-                <img src="/images/banner1.jpeg" />
+                <img src="/images/doctor-2.jpeg" />
                 <a>
                   <h5>DR. HO NGOC HUY</h5>
                 </a>
