@@ -25,7 +25,7 @@ export default function Contact() {
                                 <input placeholder="Nội dung" />
                             </div>
                             <div className="col-md-12  mb-2">
-                                <button className="btn">Gửi</button>
+                                <button className="btn btn-send">Gửi</button>
                             </div>
                         </div>
 

@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Intro() {
     return <main className="page">
         <Header tab="dich-vu/te-bao-goc" />
-        <Banner left={<h4>Dịch vụ</h4>} />
+        <Banner left={<h4>Tế bào gốc</h4>} />
 
         <Breadcrumb links={[
             {
@@ -16,46 +16,43 @@ export default function Intro() {
                 link: '/'
             },
             {
-                link: '/gioi-thieu',
+                link: '/dich-vu',
                 name: ' Giới thiệu'
             },
             {
-                link: '/gioi-thieu/doi-ngu-bac-sy',
-                name: 'Đội ngũ bác sĩ'
+                link: '/dich-vu/te-bao-goc',
+                name: 'Tế bào gốc'
             },
-           
+
         ]} />
 
         <section className="intro pt-8 pb-4">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-12 mb-4">
-                        <h3 className="title">Đội ngũ bác sĩ</h3>
+                        <h3 className="title">Tế bào gốc</h3>
 
                     </div>
                     <div className="col-md-8 col-12  mb-4">
-                        <p className="color-second bold mb-3">Bác sĩ đầu ngành</p>
+                        <p className="color-second bold mb-3">Dịch vụ chuyên nghiệp</p>
                         <p>Trung tâm Katabami Clinic quy tụ đội ngũ chuyên gia, bác sĩ, dược sĩ và điều dưỡng có trình độ
                             chuyên môn cao, tận tâm với mỗi bệnh nhân. Vì chúng tôi hiểu rằng, niềm hạnh phúc và sự hài lòng
-                            của người bệnh và gia đình người bệnh là sứ mệnh và muc tiêu hoạt động của chúng tôi.</p>
+                            của người bệnh và gia đình người bệnh là sứ mệnh và muc tiêu hoạt động của chúng tôi</p>
                     </div>
                 </div>
                 <div className="row">
                     {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
                         <div className="product-item">
                             <div className="mb-1">
-                                <img src="/images/doctor-2.jpeg" />
+                                <img src="/images/banner1.jpeg" />
                             </div>
                             <div className="mb-1">
-                                <Link href="/gioi-thieu/backsu/2132">
-                                    <h5>BS TRAN TUAN</h5>
+                                <Link href="/dich-vu/te-bao-goc/2132">
+                                    <h5>CHIROPRACTIC – CÔNG NGHỆ
+                                        TRỊ LIỆU THẦN KINH CỘT SỐNG</h5>
                                 </Link>
                             </div>
 
-                            <p className="mb-1 bold"> Giám đốc trung tâm / Chuyên gia Chiropractic</p>
-                            <hr />
-                            <p>PGS.TS.BS Phạm Nhật Thanh là một trong những
-                                chuyên gia đầu ngành trong lĩnh vực (...)</p>
                         </div>
                     </div>)}
 

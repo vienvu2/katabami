@@ -31,25 +31,24 @@ export default function Home() {
               <h3 className="title">Katabami <br /> Clinic</h3>
             </div>
             <div className="col-md-8 col-12  mb-4">
-              “Sự hài lòng của người bệnh là trung tâm của mọi hoạt động, mọi cải tiến”
-              Trung tâm Katabami Clinic luôn tiếp cận, ứng dụng những tiến bộ kỹ thuật của y học để hỗ trợ người
-              bệnh trong suốt quá trình điều trị, chữa lành và bảo vệ sức khỏe.
-              Bằng nhiều hình thức (hội thảo, tự học tự nghiên cứu, chuyển giao kỹ thuật y học tại chỗ…), đội ngũ
-              y bác sĩ, điều dưỡng củaTrung tâm Katabami Clinic đã tích cực học hỏi để bồi dưỡng y thuật, kinh
-              nghiệm chuyên môn. Đến nay, đội ngũ cán bộ, công nhân viên Bệnh viện đã không ngừng trưởng
-              thành về mọi mặt, trình độ vững vàng, đạo đức nghề nghiệp trong sáng. Nhờ đó, hằng năm Bệnh
-              viện đều nhận được giải thưởng công nhận đơn vị xuất sắc của Bộ Y tế và Ủy ban nhân dân TP.HCM
-              trao tặng
+              <p className="bold color-second mb-2">  “Sự hài lòng của người bệnh là trung tâm của mọi hoạt động, mọi cải tiến”</p>
+              <p>
+                Trung tâm Katabami Clinic luôn tiếp cận, ứng dụng những tiến bộ kỹ thuật của y học để hỗ trợ người
+                bệnh trong suốt quá trình điều trị, chữa lành và bảo vệ sức khỏe.
+                Bằng nhiều hình thức (hội thảo, tự học tự nghiên cứu, chuyển giao kỹ thuật y học tại chỗ…), đội ngũ
+                y bác sĩ, điều dưỡng củaTrung tâm Katabami Clinic đã tích cực học hỏi để bồi dưỡng y thuật, kinh
+                nghiệm chuyên môn. Đến nay, đội ngũ cán bộ, công nhân viên Bệnh viện đã không ngừng trưởng
+                thành về mọi mặt, trình độ vững vàng, đạo đức nghề nghiệp trong sáng. Nhờ đó, hằng năm Bệnh
+                viện đều nhận được giải thưởng công nhận đơn vị xuất sắc của Bộ Y tế và Ủy ban nhân dân TP.HCM
+                trao tặng
+              </p>
             </div>
           </div>
           <div className="row">
             {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
               <div className="product-item">
-                <div className="mb-1">
-                  <img src="/images/banner1.jpeg" />
-                </div>
+                <img src="/images/banner1.jpeg" />
                 <Link href="/gioi-thieu/test">
-
                   <h5>LỊCH SỬ HÌNH THÀNH VÀ PHÁT TRIỂN</h5>
                 </Link>
               </div>
