@@ -3,6 +3,7 @@ import Tabs from "@/src/components/tabs";
 import Footer from "@/src/layouts/footer";
 import Header from "@/src/layouts/header";
 import Contact from "@/src/layouts/contact";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -209,9 +210,10 @@ export default function Home() {
                 <img src="/images/banner1.jpeg" />
 
 
-                <h5>Bệnh viêm khớp ngày càng
-                  trẻ hóa, giải pháp nào điều
-                  trị sớm?</h5>
+                <Link href="/tin-tuc/2132132">
+                  <h5>Bệnh viêm khớp ngày càng
+                    trẻ hóa, giải pháp nào điều
+                    trị sớm?</h5></Link>
 
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên

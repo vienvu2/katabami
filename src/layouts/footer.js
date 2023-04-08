@@ -2,12 +2,12 @@ export default function Footer() {
     return <div className="footer">
         <div className="container">
             <div className="row">
-                <div className="col-md-4 mb-6">
+                <div className="col-md-3 mb-6">
                     <div><img src="/img/logo.svg" /></div>
 
                 </div>
 
-                <div className="col-md-8  mb-6">
+                <div className="col-md-9  mb-6">
                     <div className="menu">
                         <a className="active">
                             Trang chủ </a>
@@ -21,7 +21,7 @@ export default function Footer() {
 
                     </div>
                 </div>
-                <div className="col-md-4  mb-6">
+                <div className="col-md-3  mb-6">
 
 
                     <p>Là một trong những trung tâm điều trị cơ xương khớp
@@ -36,7 +36,7 @@ export default function Footer() {
                 </div>
 
 
-                <div className="col-md-8  mb-6">
+                <div className="col-md-9  mb-6">
                     <div className="row">
                         <div className="col-md-3">
                             <h4>CHUYÊN KHOA</h4>

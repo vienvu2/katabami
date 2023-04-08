@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-export default function Header({ tab }) {
-    return <div className="header">
+export default function Header({ tab, className }) {
+    return <div className={"header "+ className}>
         <div className="logo">
             <img src="/img/logo.svg" />
         </div>

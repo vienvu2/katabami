@@ -6,7 +6,7 @@ $secondLight: #F0B516;
 
 @font-face {
   font-family: "SF";
-  src: url('./fonts/SF-Pro-Display-Light.otf');
+  src: url('./fonts/SF-Pro-Display-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -46,6 +46,7 @@ a {
 
   &:hover {
     text-decoration: underline;
+    text-decoration-color: #F0B516;
   }
 }
 
@@ -55,6 +56,7 @@ p {
 
 img {
   max-width: 100%;
+
 }
 
 .color-second {
@@ -256,7 +258,16 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
   h4,
   p {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
+
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
   }
 
   .socials {
@@ -347,6 +358,33 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
         margin: 0;
       }
 
+    }
+  }
+
+  &.header-white {
+    background: white;
+
+    .menu {
+      ul {
+        li {
+          a {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    .action {
+      background: $primary ;
+
+      .action-item {
+        border-color: white;
+
+        a,
+        p {
+          color: white;
+        }
+      }
     }
   }
 }
@@ -489,6 +527,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     font-size: 24px;
     line-height: 29px;
     color: #555555;
+    margin-bottom: 12px;
 
     &:hover {
       color: #F7991C;
@@ -496,10 +535,20 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     }
   }
 
+  img {
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 12px;
+  }
+
   p {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .date {
+    font-size: 14px;
   }
 }
 
@@ -536,7 +585,31 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 }
 
 .contact {
-  background-image: url('/images/banner1.jpeg');
+ 
+  position: relative;
+
+  &::before {
+    background: linear-gradient(90deg, rgba(0, 175, 211, 0) 0%, #FCB912 71%);
+    opacity: 0.4;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  &::after{
+    background-image: url('/images/banner1.jpeg');
+    opacity: 0.4;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+  }
 
   h2 {
 
@@ -583,7 +656,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     line-height: 22px;
     color: #555555;
     padding: 12px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #555555;
 
     &:focus {
       outline: none;
@@ -602,6 +675,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   .breadcrumb-item {
     display: inline-block;
     padding: 12px;
+    color: #555555;
 
     &:hover {
       color: $second;
