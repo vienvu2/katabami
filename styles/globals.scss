@@ -1,0 +1,180 @@
+$primary: #006666;
+$second: #F7991C;
+$secondLight: #F0B516;
+
+html,
+body {}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-center{
+  text-align: center!important;
+}
+.text-left{
+  text-align: left!important;
+}
+.text-right{
+  text-align: right!important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+$cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+
+@each $col in $cols {
+  .col-md-#{$col} {
+    width: #{$col * 100/12 + '%'};
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+.header {
+  height: 90px;
+  background: $primary;
+
+  .header-inner {
+    height: 90px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .logo {
+    flex: 1;
+
+  }
+
+  .menu {
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        a {
+          padding: 24px 12px;
+
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF;
+
+          &.active {
+            color: $second;
+          }
+        }
+      }
+    }
+
+  }
+
+  .action {
+    height: 90px;
+    background: white;
+  }
+}
+
+.banner {
+  height: 600px;
+  background: $primary;
+
+  h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+
+    color: #FCB912;
+    margin-bottom: 45px;
+    margin-top: 100px;
+  }
+
+  h3 {
+
+    font-weight: 400;
+    font-size: 34px;
+    margin-bottom: 24px;
+    line-height: 41px;
+
+    color: #FFFFFF;
+  }
+
+  p {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    margin-bottom: 18px;
+
+  }
+}
+
+.btn {
+  height: 60px;
+  background: linear-gradient(90deg, #FCB912 0%, #F7991C 100%);
+  min-width: 180px;
+  border: 0;
+  border-radius: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.page {
+  h3.title {
+
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    color: #006666;
+  }
+  p.desc{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #555555;}
+}
+
+.product-item{
+  h5{}
+  p{}
+}
