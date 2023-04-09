@@ -269,7 +269,11 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   h4,
   p {
     margin-bottom: 7px;
+    color: white;
 
+  }
+  a{
+    color: white;
   }
 
   h4 {
@@ -312,7 +316,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   }
 
   .menu {
-
+    padding-right: 24px;
     ul {
       display: flex;
       list-style: none;

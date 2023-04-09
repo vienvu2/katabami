@@ -9,7 +9,7 @@ export default function Header({ tab, className }) {
 
         </div>
         <div className="menu">
-        <ul>
+            <ul>
                 <li>
                     <Link href='/' className={tab == '/' ? "active" : ''}>Trang chủ</Link>
                 </li>
@@ -33,11 +33,11 @@ export default function Header({ tab, className }) {
         </div>
         <div className="action">
             <div className="action-item">
-            <Link href='/'>Đăng ký tư vấn</Link>
+                <a href='#contact-form'>Đăng ký tư vấn</a>
             </div>
             <div className="action-item">
                 <p>CSKH</p>
-                <Link href="/">1900 100728</Link>
+                <a href="tel:1900100728">1900 100728</a>
             </div>
         </div>
 
@@ -54,8 +54,8 @@ export default function Header({ tab, className }) {
                 <Link href='/video' className={tab == 'video' ? "active" : ''}>Video</Link>
                 <Link href='/tin-tuc' className={tab == 'tin-tuc' ? "active" : ''}>Tin tức</Link>
                 <Link href='/lien-he' className={tab == 'lien-he' ? "active" : ''}>Liên hệ</Link>
-                <Link href='/'>Đăng ký tư vấn</Link>
-                <Link href="/">CSKH: 1900 100728</Link>
+                <a href='#contact-form'>Đăng ký tư vấn</a>
+                <a href="tel:1900100728">CSKH: 1900 100728</a>
 
             </div>
         </div>

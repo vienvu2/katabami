@@ -1,5 +1,5 @@
 export default function Contact() {
-    return <div className="contact py-8">
+    return <div className="contact py-8" id="contact-form">
         <div className="container">
 
             <div className="row align-middle">

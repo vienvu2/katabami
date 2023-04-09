@@ -34,7 +34,7 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-md-3 col-12 mb-2">
                             <h4>CHUYÊN KHOA</h4>
-                            <div className="pl-2">
+                            <div className="pl-1">
                                 <p>
                                     <a> Thoái hóa cột sống</a></p>
                                 <p>
@@ -53,17 +53,17 @@ export default function Footer() {
                         <div className="col-md-3 col-12  mb-2">
                             <h4>HỆ THỐNG PHÒNG KHÁM</h4>
                             <p className="bolder">Cơ sở 1</p>
-                            <p className="pl-2">Toà nhà HPCons, 2/13A Đường
+                            <p className="pl-1">Toà nhà HPCons, 2/13A Đường
                                 Bạch Đằng, Phường 2. Quận Tân
                                 Bình, TP. HCM</p>
                             <p className="bolder">Cơ sở 1</p>
-                            <p className="pl-2">Toà nhà HPCons, 2/13A Đường
+                            <p className="pl-1">Toà nhà HPCons, 2/13A Đường
                                 Bạch Đằng, Phường 2. Quận Tân
                                 Bình, TP. HCM</p>
                         </div>
                         <div className="col-md-3 col-12  mb-2">
                             <h4>TIN TỨC & SỰ KIỆN</h4>
-                            <div className="pl-2">
+                            <div className="pl-1">
                                 <p>
                                     <a> Tin về dịch vụ   </a>
                                 </p>
@@ -88,7 +88,7 @@ export default function Footer() {
                         <div className="col-md-3 col-12  mb-2">
                             <h4>THÔNG TIN KHÁCH HÀNG</h4>
                             <p>Thời gian mở cửa</p>
-                            <div className="pl-2">
+                            <div className="pl-1">
                                 <p>
                                     Monday - riday: 8.30 AM to 7 PM
                                 </p>
@@ -103,7 +103,9 @@ export default function Footer() {
 
                             </div>
                             <p>Tổng đài CSKH</p>
-                            <h4 className="pl-2">1900 00 11 22</h4>
+                            <a href="tel:1900001122">
+                                <h4 className="pl-1">1900 00 11 22</h4>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -48,7 +48,9 @@ export default function Intro() {
 
                         <img src="/images/banner1.jpeg" className="border-round" />
 
-                        <button className="btn btn-block">ĐẶT LỊCH NGAY HÔM NAY</button>
+                        <a href="#book">
+                            <button className="btn btn-block">ĐẶT LỊCH NGAY HÔM NAY</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -92,7 +94,7 @@ export default function Intro() {
             </div>
             )}
         </section>
-        <section className="service-contact py-6 pb-6 bg-gray">
+        <section className="service-contact py-6 pb-6 bg-gray" id="book">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
@@ -104,24 +106,24 @@ export default function Intro() {
 
                         <form className="custom-form">
                             <div className="row">
-                            <div className="col-md-6 mb-2 col-12">
-                                <div className="input">
-                                    <label>Họ và tên</label>
-                                    <input />
+                                <div className="col-md-6 mb-2 col-12">
+                                    <div className="input">
+                                        <label>Họ và tên</label>
+                                        <input />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-6  mb-2 col-12">
-                                <div className="input">
-                                    <label>Số điện thoại</label>
-                                    <input />
+                                <div className="col-md-6  mb-2 col-12">
+                                    <div className="input">
+                                        <label>Số điện thoại</label>
+                                        <input />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-md-12  mb-4 col-12">
-                                <div className="input">
-                                    <label>Nội dung</label>
-                                    <input />
+                                <div className="col-md-12  mb-4 col-12">
+                                    <div className="input">
+                                        <label>Nội dung</label>
+                                        <input />
+                                    </div>
                                 </div>
-                            </div>
                                 <div className="col-md-12 col-12">
                                     <button className="btn">ĐẶT LỊCH</button>
                                 </div>
