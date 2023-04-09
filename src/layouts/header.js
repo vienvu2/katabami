@@ -37,5 +37,24 @@ export default function Header({ tab, className }) {
                 <Link href="/">1900 100728</Link>
             </div>
         </div>
+
+        <div className="menu-mobile">
+            <img src="/img/menu.svg" />
+        </div>
+
+        <div className="menu-sider">
+            <div className="menu-wrap">
+                <Link href='/' className={tab == '/' ? "active" : ''}>Trang chủ</Link>
+                <Link href='/gioi-thieu' className={tab == 'gioi-thieu' ? "active" : ''}>Giới thiệu</Link>
+                <Link href='/dich-vu/te-bao-goc' className={tab == 'dich-vu/te-bao-goc' ? "active" : ''}>Tế bào gốc</Link>
+                <Link href='/dich-vu/vat-ly-tri-lieu' className={tab == 'dich-vu/vat-ly-tri-lieu' ? "active" : ''}>Vật lý trị liệu</Link>
+                <Link href='/video' className={tab == 'video' ? "active" : ''}>Video</Link>
+                <Link href='/tin-tuc' className={tab == 'tin-tuc' ? "active" : ''}>Tin tức</Link>
+                <Link href='/lien-he' className={tab == 'lien-he' ? "active" : ''}>Liên hệ</Link>
+                <Link href='/'>Đăng ký tư vấn</Link>
+                <Link href="/">CSKH: 1900 100728</Link>
+
+            </div>
+        </div>
     </div>
 }
