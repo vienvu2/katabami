@@ -59,8 +59,8 @@ setTimeout(() => {
         }
         console.log($('.slick-slider'))
 
-        if ($('.slick-slider')) {
-            $('.slick-slider').slick({
+        if ($('.sliders')) {
+            $('.sliders').slick({
                 speed: 300,
                 slidesToShow: 3.5,
                 slidesToScroll: 4,

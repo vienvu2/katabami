@@ -7,7 +7,7 @@ import Header from "@/src/layouts/header";
 export default function ContactPage() {
     return <main className="page page-contract">
         <Header tab="lien-he" />
-        <Banner left={<h4>Liên hệ</h4>} />
+        <Banner left={<h4>Liên hệ</h4>} img={<img src="/images/banner3.jpeg" />} />
 
         <Breadcrumb links={[
             {

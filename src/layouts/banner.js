@@ -1,10 +1,10 @@
-export default function Banner({ left }) {
+export default function Banner({ left, img }) {
     return <div className="banner">
         <div className="banner-left">
             {left}
         </div>
         <div className="banner-right">
-            <img src="/images/banner1.jpeg" />
+            {img}
         </div>
     </div>
 }

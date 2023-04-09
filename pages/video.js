@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function ContactPage() {
     return <main className="page">
         <Header tab="video" />
-        <Banner left={<h4>Video</h4>} />
+        <Banner left={<h4>Video</h4>} img={<img src="/images/banner1.jpeg" />}/>
         <Breadcrumb links={[{
             name: 'Trang chủ',
             link: '/'
@@ -33,9 +33,12 @@ export default function ContactPage() {
                     {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
                         <div className="product-item">
                             <img src="/images/banner1.jpeg" />
-                            <Link href="/video/2132">
-                                <h5>BS TRAN TUAN</h5>
-                            </Link>
+                            <a href="https://www.youtube.com/watch?v=IhqKS1PBovQ&ab_channel=BGMGhibliStudio" target="_blank">
+                                <img src="/img/video.svg" className="icon-video" />
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=IhqKS1PBovQ&ab_channel=BGMGhibliStudio" target="_blank">
+                                <h5>Tìm hiểu sơ lược về  phương pháp Tế bào gốc?</h5>
+                            </a>
                         </div>
                     </div>)}
 

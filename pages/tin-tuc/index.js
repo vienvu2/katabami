@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function ContactPage() {
     return <main className="page">
         <Header tab="tin-tuc" />
-        <Banner left={<h4>Tin tức</h4>} />
+        <Banner left={<h4>Tin tức</h4>}  img={<img src="/images/banner3.jpeg" />}  />
         <Breadcrumb links={[{
             name: 'Trang chủ',
             link: '/'
@@ -36,7 +36,7 @@ export default function ContactPage() {
                                 <img src="/images/banner1.jpeg" />
                             </div>
                             <div className="mb-1">
-                                <Link href="/tin-tuc/2132">
+                                <Link href="/tin-tuc/te-bao-goc-la-gi">
                                     <h5>Bệnh viêm khớp ngày càng
                                         trẻ hóa, giải pháp nào điều
                                         trị sớm?</h5>

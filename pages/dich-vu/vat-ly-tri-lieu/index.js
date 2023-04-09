@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Intro() {
     return <main className="page">
         <Header tab="dich-vu/vat-ly-tri-lieu" />
-        <Banner left={<h4>Vật lý trị liệu</h4>} />
+        <Banner left={<h4>Vật lý trị liệu</h4>}  img={<img src="/images/banner3.jpeg" />}  />
 
         <Breadcrumb links={[
             {
@@ -30,7 +30,7 @@ export default function Intro() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-12 mb-4">
-                        <h3 className="title">Tế bào gốc</h3>
+                        <h3 className="title">Vật lý trị liệu</h3>
 
                     </div>
                     <div className="col-md-8 col-12  mb-4">
@@ -44,10 +44,10 @@ export default function Intro() {
                     {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
                         <div className="product-item">
                             <div className="mb-1">
-                                <img src="/images/banner1.jpeg" />
+                                <img src="/images/product.png" />
                             </div>
                             <div className="mb-1">
-                                <Link href="/dich-vu/te-bao-goc/2132">
+                                <Link href="/dich-vu/vat-ly-tri-lieu/tri-lieu-than-kinh">
                                     <h5>CHIROPRACTIC - CÔNG NGHỆ
                                         TRỊ LIỆU THẦN KINH CỘT SỐNG</h5>
                                 </Link>

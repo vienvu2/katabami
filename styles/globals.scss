@@ -84,6 +84,14 @@ img {
   text-align: right !important;
 }
 
+.text-light{
+  font-weight: 300;
+}
+
+.text-small{
+  font-size: 18px;
+}
+
 
 .bold {
   font-weight: bold;
@@ -208,27 +216,36 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   display: flex;
   align-items: flex-end;
   border-bottom: 1px solid #F0B516;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   .tab {
-
-    font-weight: 500;
+    flex: 1;
     font-size: 24px;
     line-height: 29px;
-    padding-bottom: 12px;
     padding-top: 12px;
+
+    span {
+      display: inline-block;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 12px;
+      padding-right: 24px;
+    }
 
     color: #B3B3B3;
     cursor: pointer;
 
     &:hover {
-      color: #F7991C;
+      color: #F0B516;
 
     }
 
     &.active {
-      border-bottom: 2px solid #F0B516;
-      color: #F7991C;
+      font-weight: 500;
+      color: #F0B516;
+
+      span {
+        border-bottom: 3px solid #F0B516;
+      }
     }
   }
 }
@@ -538,7 +555,12 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
   .title-big {
     font-size: 72px;
-    color: $second;
+    color: $secondLight;
+
+    span {
+      font-size: 42px;
+      vertical-align: text-top;
+    }
   }
 
   p.desc {
@@ -567,6 +589,15 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 }
 
 .product-item {
+  position: relative;
+
+  .icon-video {
+    position: absolute;
+    top: calc(40% - 25px);
+    left: calc(50% - 50px);
+    height: 50px;
+  }
+
   h5 {
     font-weight: 700;
     font-size: 24px;
@@ -582,18 +613,25 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
   img {
     display: block;
-    margin-bottom: 12px;
-    border-radius: 12px;
+    margin-bottom: 16px;
+    border-radius: 6px;
   }
 
   p {
-    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
   }
 
+  .line{
+    height: 2px;
+    background: $primary;
+    width: 80px;
+    margin-bottom: 24px;
+    margin-top: 36px;
+  }
+
   .date {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -633,7 +671,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   position: relative;
 
   &::before {
-    background: linear-gradient(90deg, rgba(0, 175, 211, 0) 0%, #FCB912 71%);
+    background: linear-gradient(90deg, rgba(0, 175, 211, 0) 40%, #FCB912 91%);
     opacity: 0.4;
     position: absolute;
     content: '';
@@ -645,7 +683,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   }
 
   &::after {
-    background-image: url('/images/banner1.jpeg');
+    background-image: url('/images/contact.jpeg');
     opacity: 0.4;
     position: absolute;
     content: '';
@@ -654,6 +692,8 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     right: 0;
     bottom: 0;
     z-index: -2;
+    background-size: cover;
+    background-position: center;
   }
 
   h2 {
@@ -736,12 +776,14 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   font-weight: 400;
   font-size: 21px;
   line-height: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   color: #999999;
 
   .breadcrumb-item {
     display: inline-block;
-    padding: 12px;
+    padding: 6px;
     color: #555555;
 
     &:hover {
@@ -782,8 +824,8 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     .service-detail-inner {
       display: flex;
       gap: 40px;
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding-top: 40px;
+      padding-bottom: 40px;
       border-bottom: 1px solid #F7991C;
     }
 
@@ -822,6 +864,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
       img {
         display: none;
+        border-radius: 6px;
 
       }
     }
@@ -929,6 +972,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
   .date {
     font-size: 16px;
+    color: #444;
   }
 
   .title {
@@ -1057,6 +1101,10 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
   .page .title-big {
     font-size: 48px;
+
+    span {
+      font-size: 24px;
+    }
   }
 
   .tabs .tab {
@@ -1100,7 +1148,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
   }
 
   .breadcrumb .breadcrumb-item {
-    padding: 0 6px;
+    padding: 0 3px;
   }
 
   .product-item h5 {

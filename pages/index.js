@@ -19,7 +19,10 @@ export default function Home() {
         <p>Trị liệu thần kinh cột sống hay còn gọi là công nghệ Chiropractic được xem là
           phương pháp chỉ định đầu tiên (...)</p>
 
-        <button className="btn btn-primary">XEM CHI TIẾT</button></>} />
+        <button className="btn btn-primary">XEM CHI TIẾT</button></>} 
+        
+        img={<img src="/images/banner1.jpeg" />}
+        />
       <section className="home-cell-root py-8">
         <div className="container">
 
@@ -36,8 +39,8 @@ export default function Home() {
           <div className="row mb-4">
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
-                <img src="/images/banner1.jpeg" />
-                <Link href="/">
+                <img src="/images/product.png" />
+                <Link href='/dich-vu/te-bao-goc/tri-lieu-than-kinh'>
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
                     TRÌNH THOÁI HOÁ KHỚP</h5>
                 </Link>
@@ -74,12 +77,13 @@ export default function Home() {
           <div className="row mb-4">
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
-                <img src="/images/banner1.jpeg" />
+                <img src="/images/product.png" />
 
-                <a>
+                <Link href="/dich-vu/vat-ly-tri-lieu/tri-lieu-than-kinh">
+
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
                     TRÌNH THOÁI HOÁ KHỚP</h5>
-                </a>
+                </Link>
 
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên
@@ -112,7 +116,7 @@ export default function Home() {
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
                 <img src="/images/doctor-2.jpeg" />
-                <Link href="/gioi-thieu/doi-ngu-bac-si/bs-tran-tuan">
+                <Link href="/gioi-thieu/doi-ngu-bac-sy/bs-tran-tuan">
                   <h5>DR. HO NGOC HUY</h5>
                 </Link>
 
@@ -124,7 +128,7 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <Link href='/gioi-thieu/doi-ngu-bac-si'>
+            <Link href='/gioi-thieu/doi-ngu-bac-sy'>
               <button className="btn btn-primary">XEM TẤT CẢ</button>
             </Link>
           </div>
@@ -154,24 +158,22 @@ export default function Home() {
             <div className="col-md-8 col-12 mb-4">
               <div className="row">
                 <div className="col-md-3 col-6">
-                  <h3 className="title-big">15+</h3>
+                  <h3 className="title-big">15<span>+</span></h3>
                   <p className="desc-sm">Hơn 15 năm trong lĩnh
                     vực xương khớp</p>
                 </div>
                 <div className="col-md-3 col-6">
-                  <h3 className="title-big">15+</h3>
-                  <p className="desc-sm">Hơn 15 năm trong lĩnh
-                    vực xương khớp</p>
+                  <h3 className="title-big">52K<span>+</span></h3>
+                  <p className="desc-sm">Bệnh nhân điều tr</p>
                 </div>
                 <div className="col-md-3 col-6">
-                  <h3 className="title-big">15+</h3>
-                  <p className="desc-sm">Hơn 15 năm trong lĩnh
-                    vực xương khớp</p>
+                  <h3 className="title-big">99<span>%</span></h3>
+                  <p className="desc-sm">Bệnh nhân hài lòng
+                    với dịch vụ</p>
                 </div>
                 <div className="col-md-3 col-6">
-                  <h3 className="title-big">15+</h3>
-                  <p className="desc-sm">Hơn 15 năm trong lĩnh
-                    vực xương khớp</p>
+                  <h3 className="title-big">120<span>+</span></h3>
+                  <p className="desc-sm">Bác sĩ và nhân viên</p>
                 </div>
               </div>
             </div>
@@ -182,7 +184,7 @@ export default function Home() {
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
 
-                <Link href="/tin-tuc/bs-tran-tuan">
+                <Link href="/tin-tuc/te-bao-goc-la-gi">
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
                     TRÌNH THOÁI HOÁ KHỚP {a}</h5>
                 </Link>
@@ -214,7 +216,7 @@ export default function Home() {
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
 
-                <Link href="/tin-tuc/bs-tran-tuan">
+                <Link href="/tin-tuc/te-bao-goc-la-gi">
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
                     TRÌNH THOÁI HOÁ KHỚP {a}</h5>
                 </Link>
@@ -222,6 +224,8 @@ export default function Home() {
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên
                   ngành với nguồn gốc (...)</p>
+
+                  <p className="date">03 | 10 | 2021</p>
               </div>
             </div>)}
           </div>
@@ -243,21 +247,21 @@ export default function Home() {
             {[1, 2, 3, 4, 5, 6, 7, 8].map(a => <div key={a} className="px-1">
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
-
-                <Link href="/tin-tuc/bs-tran-tuan">
-                  <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
-                    TRÌNH THOÁI HOÁ KHỚP {a}</h5>
-                </Link>
-
-                <p>Chiropractic không phải là một phương pháp
-                  xuất hiện gần đây mà thực sự là một chuyên
-                  ngành với nguồn gốc (...)</p>
+                <a href="https://www.youtube.com/watch?v=IhqKS1PBovQ&ab_channel=BGMGhibliStudio" target="_blank">
+                  <img src="/img/video.svg" className="icon-video" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=IhqKS1PBovQ&ab_channel=BGMGhibliStudio" target="_blank">
+                  <h5>Tìm hiểu sơ lược về
+                    phương pháp Tế bào gốc?</h5>
+                </a>
               </div>
             </div>)}
           </div>
 
           <div className="text-center">
-            <button className="btn btn-primary">XEM TẤT CẢ</button>
+            <Link href="/video">
+              <button className="btn btn-primary">XEM TẤT CẢ</button>
+            </Link>
           </div>
         </div>
       </section>
