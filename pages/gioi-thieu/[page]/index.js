@@ -23,7 +23,7 @@ export default function Intro() {
                 link: '/gioi-thieu/doi-ngu-bac-sy',
                 name: 'Đội ngũ bác sĩ'
             },
-           
+
         ]} />
 
         <section className="intro pt-4 pb-4">

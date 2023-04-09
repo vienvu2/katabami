@@ -240,7 +240,7 @@ export default function Home() {
 
             </div>
             <div className="col-md-9 col-12 mb-4">
-              <Tabs tabs={['Tế bào gốc','Vật lý trị liệu', 'Tất cả']} />
+              <Tabs tabs={['Tế bào gốc', 'Vật lý trị liệu', 'Tất cả']} />
             </div>
           </div>
           <div className="row">
