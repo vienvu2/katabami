@@ -16,13 +16,22 @@ export default function Contact() {
                     <form className="custom-form">
                         <div className="row">
                             <div className="col-md-6 mb-2 col-12">
-                                <input placeholder="Họ và tên" />
+                                <div className="input">
+                                    <label>Họ và tên</label>
+                                    <input />
+                                </div>
                             </div>
                             <div className="col-md-6  mb-2 col-12">
-                                <input placeholder="Số điện thoại" />
+                                <div className="input">
+                                    <label>Số điện thoại</label>
+                                    <input />
+                                </div>
                             </div>
                             <div className="col-md-12  mb-4 col-12">
-                                <input placeholder="Nội dung" />
+                                <div className="input">
+                                    <label>Nội dung</label>
+                                    <input />
+                                </div>
                             </div>
                             <div className="col-md-12  mb-2 col-12">
                                 <button className="btn btn-send">Gửi</button>

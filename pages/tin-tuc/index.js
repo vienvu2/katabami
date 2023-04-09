@@ -25,7 +25,7 @@ export default function ContactPage() {
                         <h3 className="title">Tin tức</h3>
                     </div>
                     <div className="col-md-8  col-12 mb-4">
-                        <Tabs />
+                        <Tabs tabs={['Tin tức nổi bật', 'Khuyến mãi & Sự kiện', 'Câu chuyện khách hàng']} />
                     </div>
                 </div>
 

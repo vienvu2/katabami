@@ -25,7 +25,9 @@ export default function ContactPage() {
                         <h3 className="title">Video</h3>
                     </div>
                     <div className="col-md-8  col-12 mb-4">
-                        <Tabs />
+                        <Tabs tabs={['Tế bào gốc', 'Vật lý trị liệu', 'Tất cả']} />
+
+
                     </div>
                 </div>
 

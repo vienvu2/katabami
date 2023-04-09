@@ -209,7 +209,7 @@ export default function Home() {
 
             </div>
             <div className="col-md-9 col-12 mb-4">
-              <Tabs />
+              <Tabs tabs={['Tin tức nổi bật', 'Khuyến mãi & Sự kiện', 'Câu chuyện khách hàng']} />
             </div>
           </div>
           <div className="row">
@@ -240,7 +240,7 @@ export default function Home() {
 
             </div>
             <div className="col-md-9 col-12 mb-4">
-              <Tabs />
+              <Tabs tabs={['Tế bào gốc','Vật lý trị liệu', 'Tất cả']} />
             </div>
           </div>
           <div className="row">

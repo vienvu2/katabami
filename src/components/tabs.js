@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-export default function Tabs() {
-    const tabs = ['Tin tức nổi bật', 'Khuyến mãi & Sự kiện', 'Câu chuyện khách hàng']
+export default function Tabs({tabs = []}) {
+     
     const [tab, setTab] = useState(tabs[0])
 
     return <div className="tabs">
