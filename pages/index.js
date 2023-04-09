@@ -37,10 +37,10 @@ export default function Home() {
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
-                <a>
+                <Link href="/">
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
                     TRÌNH THOÁI HOÁ KHỚP</h5>
-                </a>
+                </Link>
 
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên
@@ -177,14 +177,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row">
-            {[1, 2, 3, 4].map(a => <div className="col-md-3 col-12" key={a}>
+          <div className="sliders">
+            {[1, 2, 3, 4, 5, 6, 7, 8].map(a => <div key={a} className="px-1">
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
 
                 <Link href="/tin-tuc/bs-tran-tuan">
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
-                    TRÌNH THOÁI HOÁ KHỚP</h5>
+                    TRÌNH THOÁI HOÁ KHỚP {a}</h5>
                 </Link>
 
                 <p>Chiropractic không phải là một phương pháp
@@ -194,9 +194,6 @@ export default function Home() {
             </div>)}
           </div>
 
-          <div className="row">
-
-          </div>
         </div>
 
       </section>
@@ -212,16 +209,15 @@ export default function Home() {
               <Tabs tabs={['Tin tức nổi bật', 'Khuyến mãi & Sự kiện', 'Câu chuyện khách hàng']} />
             </div>
           </div>
-          <div className="row">
-            {[1, 2, 3, 4].map(a => <div className="col-md-3 col-12" key={a}>
+          <div className="sliders">
+            {[1, 2, 3, 4, 5, 6, 7, 8].map(a => <div key={a} className="px-1">
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
 
-
-                <Link href="/tin-tuc/2132132">
-                  <h5>Bệnh viêm khớp ngày càng
-                    trẻ hóa, giải pháp nào điều
-                    trị sớm?</h5></Link>
+                <Link href="/tin-tuc/bs-tran-tuan">
+                  <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
+                    TRÌNH THOÁI HOÁ KHỚP {a}</h5>
+                </Link>
 
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên
@@ -243,17 +239,15 @@ export default function Home() {
               <Tabs tabs={['Tế bào gốc', 'Vật lý trị liệu', 'Tất cả']} />
             </div>
           </div>
-          <div className="row">
-            {[1, 2, 3, 4].map(a => <div className="col-md-3 col-12 mb-4" key={a}>
+          <div className="sliders mb-2">
+            {[1, 2, 3, 4, 5, 6, 7, 8].map(a => <div key={a} className="px-1">
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
 
-                <a>
-
-                  <h5>Bệnh viêm khớp ngày càng
-                    trẻ hóa, giải pháp nào điều
-                    trị sớm?</h5>
-                </a>
+                <Link href="/tin-tuc/bs-tran-tuan">
+                  <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
+                    TRÌNH THOÁI HOÁ KHỚP {a}</h5>
+                </Link>
 
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên

@@ -97,19 +97,24 @@ img {
     margin-right: -12px
 }
 
+[class^=col-] {
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+.sliders .slick-list {
+    overflow: unset
+}
+
 @media only screen and (min-width:992px) {
     .col-md-1 {
-        width: 8.3333333333%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 8.3333333333%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-1 {
-        width: 8.3333333333%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 8.3333333333%
     }
 }
 
@@ -175,17 +180,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-2 {
-        width: 16.6666666667%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 16.6666666667%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-2 {
-        width: 16.6666666667%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 16.6666666667%
     }
 }
 
@@ -251,17 +252,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-3 {
-        width: 25%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 25%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-3 {
-        width: 25%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 25%
     }
 }
 
@@ -327,17 +324,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-4 {
-        width: 33.3333333333%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 33.3333333333%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-4 {
-        width: 33.3333333333%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 33.3333333333%
     }
 }
 
@@ -403,17 +396,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-5 {
-        width: 41.6666666667%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 41.6666666667%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-5 {
-        width: 41.6666666667%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 41.6666666667%
     }
 }
 
@@ -479,17 +468,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-6 {
-        width: 50%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 50%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-6 {
-        width: 50%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 50%
     }
 }
 
@@ -555,17 +540,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-7 {
-        width: 58.3333333333%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 58.3333333333%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-7 {
-        width: 58.3333333333%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 58.3333333333%
     }
 }
 
@@ -631,17 +612,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-8 {
-        width: 66.6666666667%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 66.6666666667%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-8 {
-        width: 66.6666666667%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 66.6666666667%
     }
 }
 
@@ -707,17 +684,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-9 {
-        width: 75%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 75%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-9 {
-        width: 75%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 75%
     }
 }
 
@@ -783,17 +756,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-10 {
-        width: 83.3333333333%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 83.3333333333%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-10 {
-        width: 83.3333333333%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 83.3333333333%
     }
 }
 
@@ -859,17 +828,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-11 {
-        width: 91.6666666667%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 91.6666666667%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-11 {
-        width: 91.6666666667%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 91.6666666667%
     }
 }
 
@@ -935,17 +900,13 @@ img {
 
 @media only screen and (min-width:992px) {
     .col-md-12 {
-        width: 100%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 100%
     }
 }
 
 @media only screen and (max-width:992px) {
     .col-12 {
-        width: 100%;
-        padding-left: 12px;
-        padding-right: 12px
+        width: 100%
     }
 }
 
@@ -1281,6 +1242,10 @@ img {
     width: 100%
 }
 
+.page {
+    overflow-x: hidden
+}
+
 .page h3.title {
     font-weight: 700;
     font-size: 48px;
@@ -1447,6 +1412,7 @@ img {
     font-weight: 500;
     top: 12px;
     left: 12px;
+    pointer-events: none;
     transition: all .1s linear
 }
 
@@ -2547,4 +2513,105 @@ img {
         padding-top: 72px;
         padding-bottom: 72px
     }
+}
+
+.slick-slider {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list,
+.slick-slider {
+    position: relative;
+    display: block
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-list:focus {
+    outline: none
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+    transform: translateZ(0)
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.slick-track:after,
+.slick-track:before {
+    display: table;
+    content: ""
+}
+
+.slick-track:after {
+    clear: both
+}
+
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px
+}
+
+[dir=rtl] .slick-slide {
+    float: right
+}
+
+.slick-slide img {
+    display: block
+}
+
+.slick-slide.slick-loading img {
+    display: none
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+    display: none
 }

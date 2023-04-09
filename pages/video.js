@@ -32,14 +32,10 @@ export default function ContactPage() {
                 <div className="row">
                     {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
                         <div className="product-item">
-                            <div className="mb-1">
-                                <img src="/images/banner1.jpeg" />
-                            </div>
-                            <div className="mb-1">
-                                <Link href="/video/2132">
-                                    <h5>BS TRAN TUAN</h5>
-                                </Link>
-                            </div>
+                            <img src="/images/banner1.jpeg" />
+                            <Link href="/video/2132">
+                                <h5>BS TRAN TUAN</h5>
+                            </Link>
                         </div>
                     </div>)}
 

@@ -73,22 +73,22 @@ export default function NewsDetailPage() {
                             <h4 className="title mb-3">Tin nổi bật</h4>
 
                             <div className="product-items">
-
-                                <div className="product-item">
+                                {[1, 2, 3, 4, 5].map(a => <div className="product-item" key={a}>
                                     <img src="/images/banner1.jpeg" />
                                     <Link href="/tin-tuc/2132">
                                         <h5>BS TRAN TUAN</h5>
                                     </Link>
                                     <p>Tế bào gốc là tế bào có khả năng tự đổi mới, tăng sin</p>
-                                </div>
+                                </div>)}
+
                             </div>
                             <div className="text-center">
-                                <a>
+                                <a className="product-items-prev">
                                     <img src="/img/prev.svg" />
                                 </a>
                                 &nbsp;
                                 &nbsp;
-                                <a>
+                                <a className="product-items-next">
                                     <img src="/img/next.svg" />
                                 </a>
                             </div>

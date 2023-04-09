@@ -1,4 +1,3 @@
-// setTimeout(() => {
 
 $(document).ready(function () {
     console.log("ready!");
@@ -36,5 +35,57 @@ $(document).ready(function () {
         $('.menu-sider').toggle()
     });
 
+
+    if ($('.product-items')) {
+        $('.product-items').slick({
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+        })
+        $('.product-items-next').click(function () {
+            $('.product-items').slick('slickNext');
+        })
+
+
+        $('.product-items-prev').click(function () {
+            $('.product-items').slick('slickPrev');
+        })
+    }
+
+    if ($('.sliders')) {
+        $('.sliders').slick({
+            speed: 300,
+            slidesToShow: 3.5,
+            slidesToScroll: 4,
+            infinite: false,
+            dots: false,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        })
+    }
+
 })
-// }, 2000)
