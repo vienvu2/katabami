@@ -50,7 +50,9 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <button className="btn btn-primary">TẤT CẢ DỊCH VỤ</button>
+            <Link href='/dich-vu/te-bao-goc'>
+              <button className="btn btn-primary">TẤT CẢ DỊCH VỤ</button>
+            </Link>
           </div>
 
         </div>
@@ -89,7 +91,9 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <button className="btn btn-primary">TẤT CẢ DỊCH VỤ</button>
+            <Link href='/dich-vu/vat-ly-tri-lieu'>
+              <button className="btn btn-primary">TẤT CẢ DỊCH VỤ</button>
+            </Link>
           </div>
 
 
@@ -108,9 +112,9 @@ export default function Home() {
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
                 <img src="/images/doctor-2.jpeg" />
-                <a>
+                <Link href="/gioi-thieu/doi-ngu-bac-si/bs-tran-tuan">
                   <h5>DR. HO NGOC HUY</h5>
-                </a>
+                </Link>
 
                 <p>Hoàn thành 4 năm đại học đại cương, 2 năm
                   chuyên sâu về khoa học và 4 năm chuyên
@@ -120,7 +124,9 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <button className="btn btn-primary">XEM TẤT CẢ</button>
+            <Link href='/gioi-thieu/doi-ngu-bac-si'>
+              <button className="btn btn-primary">XEM TẤT CẢ</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -176,8 +182,10 @@ export default function Home() {
               <div className="product-item">
                 <img src="/images/banner1.jpeg" />
 
-                <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
-                  TRÌNH THOÁI HOÁ KHỚP</h5>
+                <Link href="/tin-tuc/bs-tran-tuan">
+                  <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
+                    TRÌNH THOÁI HOÁ KHỚP</h5>
+                </Link>
 
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên
