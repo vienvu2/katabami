@@ -1,10 +1,11 @@
+import Link from "next/link";
+
 export default function Footer() {
     return <div className="footer">
         <div className="container">
             <div className="row">
                 <div className="col-md-3 col-12 mb-6">
                     <div className="mb-4"><img src="/img/logo.svg" /></div>
-
 
                     <p>Là một trong những trung tâm điều trị cơ xương khớp
                         chuẩn Mỹ hàng đầu tại Việt Nam, Katabami Clinic không
@@ -21,15 +22,13 @@ export default function Footer() {
 
                 <div className="col-md-9 col-12 mb-6">
                     <div className="menu mb-6">
-                        <a className="active">
-                            Trang chủ </a>
-                        <a>
-                            Giới thiệu </a><a>
-                            Tế bào gốc  </a><a>
-                            Vật lý trị liệu </a><a>
-                            Video </a><a>
-                            Tin tức </a><a>
-                            Liên hệ </a>
+                        <Link href='/'  >Trang chủ</Link>
+                        <Link href='/gioi-thieu'  >Giới thiệu</Link>
+                        <Link href='/dich-vu/te-bao-goc'  >Tế bào gốc</Link>
+                        <Link href='/dich-vu/vat-ly-tri-lieu'  >Vật lý trị liệu</Link>
+                        <Link href='/video'  >Video</Link>
+                        <Link href='/tin-tuc'  >Tin tức</Link>
+                        <Link href='/lien-he' >Liên hệ</Link>
 
                     </div>
                     <div className="row">

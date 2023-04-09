@@ -94,25 +94,34 @@ export default function Intro() {
         <section className="service-contact py-6 pb-6 bg-gray">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-12">
                         <h3 className="title">Đặt lịch hẹn</h3>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 col-12">
                         <p className="bold color-second">Điền đầy đủ thông tin để nhận ngay ưu đãi giảm 50% phí
                             thăm khám với bác sĩ nước ngoài.</p>
 
                         <form className="custom-form">
                             <div className="row">
-                                <div className="col-md-6 mb-2">
-                                    <input placeholder="Họ và tên" />
+                                <div className="col-md-6 mb-2 col-12">
+                                    <div className="input">
+                                        <label>Họ và tên</label>
+                                        <input />
+                                    </div>
                                 </div>
-                                <div className="col-md-6 mb-2">
-                                    <input placeholder="Họ và tên" />
+                                <div className="col-md-6  mb-2 col-12">
+                                    <div className="input">
+                                        <label>Số điện thoại</label>
+                                        <input />
+                                    </div>
                                 </div>
-                                <div className="col-md-12 mb-4">
-                                    <input placeholder="Nội dung" />
+                                <div className="col-md-12  mb-4 col-12">
+                                    <div className="input">
+                                        <label>Nội dung</label>
+                                        <input />
+                                    </div>
                                 </div>
-                                <div className="col-md-12">
+                                <div className="col-md-12 col-12">
                                     <button className="btn">ĐẶT LỊCH</button>
                                 </div>
                             </div>

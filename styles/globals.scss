@@ -722,7 +722,8 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     &:hover {
       color: $second;
     }
-    &:first-child{
+
+    &:first-child {
       padding-left: 0;
     }
   }
@@ -1088,6 +1089,27 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     a {
       display: block;
       padding: 6px 0;
+    }
+  }
+  .service-detail {
+  
+
+    .service-detail-plus {
+      display: none;
+    }
+
+    .service-detail-item {
+      .service-detail-inner{
+        display: block;
+      }
+      .service-detail-inner {
+        gap: 12px;
+      }
+
+      .service-detail-title {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
 

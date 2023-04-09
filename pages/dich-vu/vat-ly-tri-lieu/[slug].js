@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Intro() {
     return <main className="page">
-     <Header tab="dich-vu/vat-ly-tri-lieu" />
+        <Header tab="dich-vu/vat-ly-tri-lieu" />
         <Banner left={<h4>Vật lý trị liệu</h4>} />
 
         <Breadcrumb links={[
@@ -104,16 +104,25 @@ export default function Intro() {
 
                         <form className="custom-form">
                             <div className="row">
-                                <div className="col-md-6 mb-2">
-                                    <input placeholder="Họ và tên" />
+                            <div className="col-md-6 mb-2 col-12">
+                                <div className="input">
+                                    <label>Họ và tên</label>
+                                    <input />
                                 </div>
-                                <div className="col-md-6 mb-2">
-                                    <input placeholder="Họ và tên" />
+                            </div>
+                            <div className="col-md-6  mb-2 col-12">
+                                <div className="input">
+                                    <label>Số điện thoại</label>
+                                    <input />
                                 </div>
-                                <div className="col-md-12 mb-4">
-                                    <input placeholder="Nội dung" />
+                            </div>
+                            <div className="col-md-12  mb-4 col-12">
+                                <div className="input">
+                                    <label>Nội dung</label>
+                                    <input />
                                 </div>
-                                <div className="col-md-12">
+                            </div>
+                                <div className="col-md-12 col-12">
                                     <button className="btn">ĐẶT LỊCH</button>
                                 </div>
                             </div>
