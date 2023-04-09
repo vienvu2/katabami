@@ -5,7 +5,7 @@ $secondLight: #F0B516;
 @font-face {
   font-family: "SF";
   src: url('./fonts/SF-Pro-Display-Light.otf');
-  font-weight:300;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -735,12 +735,11 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
       border-bottom: 1px solid #F7991C;
     }
 
-    &:last-child{
-    .service-detail-inner {
-      border: none
-
+    &:last-child {
+      .service-detail-inner {
+        border: none
+      }
     }
-  }
 
     .service-detail-title {
       cursor: pointer;
@@ -768,8 +767,9 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
     .service-detail-image {
       flex: 1;
-      img{
-      display: none;
+
+      img {
+        display: none;
 
       }
     }
@@ -803,6 +803,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
     &.active {
       background: #F2F2F2;
+
       .service-detail-plus {
 
         &::before {
@@ -824,11 +825,182 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
       }
 
       .service-detail-image {
-        img{
-        display: block;
+        img {
+          display: block;
 
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  html,
+  body {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555555;
+  }
+
+
+  .btn{
+    height: 45px;
+    font-size: 14px;
+  }
+  .header {
+    .menu {
+      display: none;
+    }
+  }
+
+  .banner {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+
+    h4{
+      font-size: 36px;
+    }
+
+    h5 {
+      margin-bottom: 24px;
+    }
+
+    .banner-left {
+      padding-left: 12px;
+      width: 100%;
+      padding-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    .banner-right {
+      margin: 0;
+
+      img {
+        border-radius: 0;
+        height: 300px;
+      }
+    }
+  }
+
+  .page h3.title {
+    font-size: 24px;
+    letter-spacing: -2px;
+    line-height: 42px;
+  }
+  .page p.desc{
+    font-size: 20px;
+  }
+  .page p.desc-sm{
+    font-size: 16px;
+  }
+
+  .page .title-big {
+    font-size: 48px;
+  }
+
+  .tabs .tab {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .image-grid {
+
+    grid-template-columns: auto auto;
+  }
+
+  .image-grid .image-grid-content {
+    min-height: 200px;
+  }
+
+  .contact h2 {
+    font-size: 36px;
+
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
+  .contact a.phone {
+    font-size: 36px;
+
+  }
+
+  .breadcrumb{
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 24px;
+  }
+  .breadcrumb .breadcrumb-item{
+    padding:0 6px;
+  }
+
+  @each $col in $cols {
+
+    .m-#{$col} {
+      margin: #{6 * $col +'px'}
+    }
+
+    .mt-#{$col} {
+      margin-top: #{6 * $col +'px'}
+    }
+
+    .mb-#{$col} {
+      margin-bottom: #{6 * $col +'px'}
+    }
+
+    .ml-#{$col} {
+      margin-left: #{6 * $col +'px'}
+    }
+
+    .mr-#{$col} {
+      margin-right: #{6 * $col +'px'}
+    }
+
+
+    .mx-#{$col} {
+      margin-left: #{6 * $col +'px'};
+      margin-right: #{6 * $col +'px'}
+    }
+
+    .my-#{$col} {
+      margin-top: #{6 * $col +'px'};
+      margin-bottom: #{6 * $col +'px'}
+    }
+
+
+
+    .p-#{$col} {
+      padding: #{6 * $col +'px'}
+    }
+
+    .pt-#{$col} {
+      padding-top: #{6 * $col +'px'}
+    }
+
+    .pb-#{$col} {
+      padding-bottom: #{6 * $col +'px'}
+    }
+
+    .pl-#{$col} {
+      padding-left: #{6 * $col +'px'}
+    }
+
+    .pr-#{$col} {
+      padding-right: #{6 * $col +'px'}
+    }
+
+
+    .px-#{$col} {
+      padding-left: #{6 * $col +'px'};
+      padding-right: #{6 * $col +'px'}
+    }
+
+    .py-#{$col} {
+      padding-top: #{6 * $col +'px'};
+      padding-bottom: #{6 * $col +'px'}
     }
   }
 }

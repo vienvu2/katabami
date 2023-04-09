@@ -153,22 +153,22 @@ export default function Home() {
             <div className="col-md-4 col-12" />
             <div className="col-md-8 col-12 mb-4">
               <div className="row">
-                <div className="col-md-3">
+                <div className="col-md-3 col-6">
                   <h3 className="title-big">15+</h3>
                   <p className="desc-sm">Hơn 15 năm trong lĩnh
                     vực xương khớp</p>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 col-6">
                   <h3 className="title-big">15+</h3>
                   <p className="desc-sm">Hơn 15 năm trong lĩnh
                     vực xương khớp</p>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 col-6">
                   <h3 className="title-big">15+</h3>
                   <p className="desc-sm">Hơn 15 năm trong lĩnh
                     vực xương khớp</p>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 col-6">
                   <h3 className="title-big">15+</h3>
                   <p className="desc-sm">Hơn 15 năm trong lĩnh
                     vực xương khớp</p>

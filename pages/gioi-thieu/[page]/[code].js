@@ -30,11 +30,11 @@ export default function IntroItem() {
         <section>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4 mb-4">
+                    <div className="col-md-4  col-12 mb-4">
                         <img src="/images/doctor-2.jpeg" />
                         <h3 className="title">Kinh nghiệm</h3>
                     </div>
-                    <div className="col-md-8 mb-4">
+                    <div className="col-md-8 col-12 mb-4">
                         <h3 className="title">PGS.TS.BS Phạm Nhật Thanh</h3>
                         <p><b>Giám đốc trung tâm / Chuyên gia Chiropractic</b></p>
 
@@ -62,10 +62,10 @@ export default function IntroItem() {
 
                         <img src="/images/banner1.jpeg" />
                     </div>
-                    <div className="col-md-4 mb-4">
+                    <div className="col-md-4  col-12 mb-4">
                         <h3 className="title">Thành tựu</h3>
                     </div>
-                    <div className="col-md-8 mb-4">
+                    <div className="col-md-8  col-12 mb-4">
 
                         <p>
                             <b>1984 - 2010:</b> Giảng viên chính - Giáo vụ Sau Đại học bộ môn Nội tại Đại học Y Dược TP HCM. Kiêm

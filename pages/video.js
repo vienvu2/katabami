@@ -21,10 +21,10 @@ export default function ContactPage() {
         <section className="pt-8 pb-4">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4 mb-4">
+                    <div className="col-md-4   col-12 mb-4">
                         <h3 className="title">Video</h3>
                     </div>
-                    <div className="col-md-8 mb-4">
+                    <div className="col-md-8  col-12 mb-4">
                         <Tabs />
                     </div>
                 </div>

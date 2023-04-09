@@ -2,12 +2,12 @@ export default function Footer() {
     return <div className="footer">
         <div className="container">
             <div className="row">
-                <div className="col-md-3 mb-6">
+                <div className="col-md-3 col-12 mb-6">
                     <div><img src="/img/logo.svg" /></div>
 
                 </div>
 
-                <div className="col-md-9  mb-6">
+                <div className="col-md-9 col-12 mb-6">
                     <div className="menu">
                         <a className="active">
                             Trang chủ </a>
@@ -21,7 +21,7 @@ export default function Footer() {
 
                     </div>
                 </div>
-                <div className="col-md-3  mb-6">
+                <div className="col-md-3 col-12  mb-6">
 
 
                     <p>Là một trong những trung tâm điều trị cơ xương khớp
@@ -36,9 +36,9 @@ export default function Footer() {
                 </div>
 
 
-                <div className="col-md-9  mb-6">
+                <div className="col-md-9 col-12 mb-6">
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-12">
                             <h4>CHUYÊN KHOA</h4>
                             <div className="pl-2">
                                 <p>
@@ -56,7 +56,7 @@ export default function Footer() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-12">
                             <h4>HỆ THỐNG PHÒNG KHÁM</h4>
                             <p className="bolder">Cơ sở 1</p>
                             <p className="pl-2">Toà nhà HPCons, 2/13A Đường
@@ -67,7 +67,7 @@ export default function Footer() {
                                 Bạch Đằng, Phường 2. Quận Tân
                                 Bình, TP. HCM</p>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-12">
                             <h4>TIN TỨC & SỰ KIỆN</h4>
                             <div className="pl-2">
                                 <p>
@@ -91,7 +91,7 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        <div className="col-md-3">
+                        <div className="col-md-3 col-12">
                             <h4>THÔNG TIN KHÁCH HÀNG</h4>
                             <p>Thời gian mở cửa</p>
                             <div className="pl-2">
@@ -114,7 +114,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="col-md-12 text-center">
+                <div className="col-md-12 col-12 text-center">
                     <div className="socials">
                         <a href="https://facebook.com" target="_blank">
                             <img src="/img/ic-fb.svg" />
