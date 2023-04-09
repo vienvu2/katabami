@@ -3,6 +3,7 @@ import Banner from "@/src/layouts/banner";
 import Contact from "@/src/layouts/contact";
 import Footer from "@/src/layouts/footer";
 import Header from "@/src/layouts/header";
+import Link from "next/link";
 
 export default function NewsDetailPage() {
     return <main className="page">
@@ -69,11 +70,26 @@ export default function NewsDetailPage() {
                     </div>
                     <div className="col-md-4 col-12 mb-4">
                         <div className="news-top mb-2">
-                            <h4 className="title">Tin nổi bật</h4>
+                            <h4 className="title mb-3">Tin nổi bật</h4>
+
+                            <div className="product-item">
+                                <img src="/images/banner1.jpeg" />
+                                <Link href="/tin-tuc/2132">
+                                    <h5>BS TRAN TUAN</h5>
+                                </Link>
+                                <p>Tế bào gốc là tế bào có khả năng tự đổi mới, tăng sin</p>
+                            </div>
                         </div>
 
                         <div className="news-top">
-                            <h4 className="title">Tin nổi bật</h4>
+                            <h4 className="title mb-3">Tin tức khác</h4>
+                            {[1, 2, 3, 4].map(a => <div className="product-item mb-2">
+                                <img src="/images/banner1.jpeg" />
+                                <Link href="/tin-tuc/2132">
+                                    <h5>BS TRAN TUAN</h5>
+                                </Link>
+                            </div>)}
+
                         </div>
                     </div>
                 </div>
