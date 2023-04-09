@@ -21,10 +21,10 @@ export default function ContactPage() {
         <section className="pt-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-8">
+                    <div className="col-md-8 col-12">
                         <h3 className="title">Katabami Clinic <br />   Center</h3>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 col-12">
                         <div className="block-address">
                             <h5>Katabami Clinic Center</h5>
                             <p>
