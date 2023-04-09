@@ -7,8 +7,8 @@ import Script from 'next/script'
 export default function App({ Component, pageProps }) {
   return <>
     <Component {...pageProps} />
-    <Script src="/jquery.js" />
-    <Script src="/slick.js" />
-    <Script src="/main.js" />
+    <Script src="/js/jquery.js" />
+    <Script src="/js/slick.js" />
+    <Script src="/js/main.js" />
   </>
 }
