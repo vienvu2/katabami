@@ -4,28 +4,81 @@ $secondLight: #F0B516;
 
 @font-face {
   font-family: "SF";
-  src: url('./fonts/SF-Pro-Display-Light.otf');
+
+  src: url('./fonts/SFProDisplay-Light.eot');
+  /* IE9+ Compat Modes */
+  src: url('./fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('./fonts/SFProDisplay-Light.woff2') format('woff2'),
+    /* Super modern browsers */
+    url('./fonts/SFProDisplay-Light.woff') format('woff'),
+    /* Modern browsers */
+    url('./fonts/SFProDisplay-Light.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('./fonts/SFProDisplay-Light.svg#FontName') format('svg');
+  /* Legacy iOS */
+
+
+
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SF";
-  src: url('./fonts/SF-Pro-Display-Regular.otf');
+  src: url('./fonts/SFProDisplay-Regular.eot');
+  /* IE9+ Compat Modes */
+  src: url('./fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('./fonts/SFProDisplay-Regular.woff2') format('woff2'),
+    /* Super modern browsers */
+    url('./fonts/SFProDisplay-Regular.woff') format('woff'),
+    /* Modern browsers */
+    url('./fonts/SFProDisplay-Regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('./fonts/SFProDisplay-Regular.svg#FontName') format('svg');
+  /* Legacy iOS */
+
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SF";
-  src: url('./fonts/SF-Pro-Display-Bold.otf');
+
+  src: url('./fonts/SFProDisplay-Bold.eot');
+  /* IE9+ Compat Modes */
+  src: url('./fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('./fonts/SFProDisplay-Bold.woff2') format('woff2'),
+    /* Super modern browsers */
+    url('./fonts/SFProDisplay-Bold.woff') format('woff'),
+    /* Modern browsers */
+    url('./fonts/SFProDisplay-Bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('./fonts/SFProDisplay-Bold.svg#FontName') format('svg');
+
+
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SF";
-  src: url('./fonts/SF-Pro-Display-Medium.otf');
+
+
+  src: url('./fonts/SFProDisplay-Medium.eot');
+  /* IE9+ Compat Modes */
+  src: url('./fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('./fonts/SFProDisplay-Medium.woff2') format('woff2'),
+    /* Super modern browsers */
+    url('./fonts/SFProDisplay-Medium.woff') format('woff'),
+    /* Modern browsers */
+    url('./fonts/SFProDisplay-Medium.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('./fonts/SFProDisplay-Medium.svg#FontName') format('svg');
+
   font-weight: 500;
 }
 
@@ -84,11 +137,11 @@ img {
   text-align: right !important;
 }
 
-.text-light{
+.text-light {
   font-weight: 300;
 }
 
-.text-small{
+.text-small {
   font-size: 18px;
 }
 
@@ -622,7 +675,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     line-height: 24px;
   }
 
-  .line{
+  .line {
     height: 2px;
     background: $primary;
     width: 80px;

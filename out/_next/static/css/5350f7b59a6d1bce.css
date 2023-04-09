@@ -1,27 +1,31 @@
 @font-face {
     font-family: SF;
-    src: url(/_next/static/media/SF-Pro-Display-Light.3d06cec8.otf);
+    src: url(/_next/static/media/SFProDisplay-Light.12529029.eot);
+    src: url(/_next/static/media/SFProDisplay-Light.12529029.eot) format("embedded-opentype"), url(/_next/static/media/SFProDisplay-Light.673f9c9d.woff2) format("woff2"), url(/_next/static/media/SFProDisplay-Light.47219b8c.woff) format("woff"), url(/_next/static/media/SFProDisplay-Light.9936faba.ttf) format("truetype"), url(/_next/static/media/SFProDisplay-Light.38e556bc.svg) format("svg");
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: SF;
-    src: url(/_next/static/media/SF-Pro-Display-Regular.6de88030.otf);
+    src: url(/_next/static/media/SFProDisplay-Regular.0c801e86.eot);
+    src: url(/_next/static/media/SFProDisplay-Regular.0c801e86.eot) format("embedded-opentype"), url(/_next/static/media/SFProDisplay-Regular.060c6d83.woff2) format("woff2"), url(/_next/static/media/SFProDisplay-Regular.ff28936d.woff) format("woff"), url(/_next/static/media/SFProDisplay-Regular.defaca3c.ttf) format("truetype"), url(/_next/static/media/SFProDisplay-Regular.d3b01b3a.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: SF;
-    src: url(/_next/static/media/SF-Pro-Display-Bold.da4e794c.otf);
+    src: url(/_next/static/media/SFProDisplay-Bold.9d21dfe6.eot);
+    src: url(/_next/static/media/SFProDisplay-Bold.9d21dfe6.eot) format("embedded-opentype"), url(/_next/static/media/SFProDisplay-Bold.7de9d336.woff2) format("woff2"), url(/_next/static/media/SFProDisplay-Bold.b0bec7e0.woff) format("woff"), url(/_next/static/media/SFProDisplay-Bold.bf2fc983.ttf) format("truetype"), url(/_next/static/media/SFProDisplay-Bold.171792e4.svg) format("svg");
     font-weight: 700;
     font-style: normal
 }
 
 @font-face {
     font-family: SF;
-    src: url(/_next/static/media/SF-Pro-Display-Medium.de406798.otf);
+    src: url(/_next/static/media/SFProDisplay-Medium.b9995f55.eot);
+    src: url(/_next/static/media/SFProDisplay-Medium.b9995f55.eot) format("embedded-opentype"), url(/_next/static/media/SFProDisplay-Medium.311e0787.woff2) format("woff2"), url(/_next/static/media/SFProDisplay-Medium.f29ac2b6.woff) format("woff"), url(/_next/static/media/SFProDisplay-Medium.202fa1d6.ttf) format("truetype"), url(/_next/static/media/SFProDisplay-Medium.43c3addb.svg) format("svg");
     font-weight: 500
 }
 
