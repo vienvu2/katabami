@@ -96,7 +96,7 @@ export default function NewsDetailPage() {
 
                         <div className="news-top">
                             <h4 className="title mb-3">Tin tức khác</h4>
-                            {[1, 2, 3, 4].map(a => <div className="product-item mb-2">
+                            {[1, 2, 3, 4].map(a => <div className="product-item mb-2" key={a}>
                                 <img src="/images/banner1.jpeg" />
                                 <Link href="/tin-tuc/2132">
                                     <h5>BS TRAN TUAN</h5>

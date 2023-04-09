@@ -18,7 +18,7 @@ export default function ContactPage() {
             link: '/tin-tuc',
             name: 'Tin tức'
         },]} />
-        <section className="pt-8 pb-4">
+        <section className="pt-4 pb-4">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4  col-12 mb-4">

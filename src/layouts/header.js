@@ -3,10 +3,12 @@ import Link from "next/link";
 export default function Header({ tab, className }) {
     return <div className={"header " + className}>
         <div className="logo">
-            {
-                className ? <img src="/img/logo2.svg" /> : <img src="/img/logo.svg" />
-            }
+            <Link href="/">
+                {
+                    className ? <img src="/img/logo2.svg" /> : <img src="/img/logo.svg" />
+                }
 
+            </Link>
         </div>
         <div className="menu">
             <ul>
