@@ -18,7 +18,7 @@ export default function ContactPage() {
             link: '/video',
             name: ' Video'
         },]} />
-        <section className="pt-8 pb-4">
+        <section className="pt-4 pb-4">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4   col-12 mb-4">
@@ -26,8 +26,6 @@ export default function ContactPage() {
                     </div>
                     <div className="col-md-8  col-12 mb-4">
                         <Tabs tabs={['Tế bào gốc', 'Vật lý trị liệu', 'Tất cả']} />
-
-
                     </div>
                 </div>
 

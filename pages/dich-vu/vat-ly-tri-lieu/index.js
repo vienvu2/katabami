@@ -26,7 +26,7 @@ export default function Intro() {
 
         ]} />
 
-        <section className="intro pt-8 pb-4">
+        <section className="intro pt-4 pb-4">
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-12 mb-4">

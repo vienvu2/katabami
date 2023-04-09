@@ -3,10 +3,13 @@ import Link from "next/link";
 export default function Header({ tab, className }) {
     return <div className={"header " + className}>
         <div className="logo">
-            <img src="/img/logo.svg" />
+            {
+                className ? <img src="/img/logo2.svg" /> : <img src="/img/logo.svg" />
+            }
+
         </div>
         <div className="menu">
-            <ul>
+        <ul>
                 <li>
                     <Link href='/' className={tab == '/' ? "active" : ''}>Trang chủ</Link>
                 </li>
@@ -30,7 +33,7 @@ export default function Header({ tab, className }) {
         </div>
         <div className="action">
             <div className="action-item">
-                <Link href='/'>Đăng ký tư vấn</Link>
+            <Link href='/'>Đăng ký tư vấn</Link>
             </div>
             <div className="action-item">
                 <p>CSKH</p>
