@@ -74,7 +74,9 @@ export default function NewsDetailPage() {
 
                             <div className="product-items">
                                 {[1, 2, 3, 4, 5].map(a => <div className="product-item" key={a}>
-                                    <img src="/images/banner1.jpeg" />
+                                    <Link href="/tin-tuc/te-bao-goc-la-gi">
+                                        <img src="/images/banner1.jpeg" />
+                                    </Link>
                                     <Link href="/tin-tuc/te-bao-goc-la-gi">
                                         <h5>BS TRAN TUAN</h5>
                                     </Link>
@@ -97,7 +99,9 @@ export default function NewsDetailPage() {
                         <div className="news-top">
                             <h4 className="title mb-3">Tin tức khác</h4>
                             {[1, 2, 3, 4].map(a => <div className="product-item mb-2" key={a}>
-                                <img src="/images/banner1.jpeg" />
+                                <Link href="/tin-tuc/te-bao-goc-la-gi">
+                                    <img src="/images/banner1.jpeg" />
+                                </Link>
                                 <Link href="/tin-tuc/te-bao-goc-la-gi">
                                     <h5>BS TRAN TUAN</h5>
                                 </Link>

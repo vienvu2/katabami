@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="page page-intro">
       <Header tab="gioi-thieu" />
-      <Banner left={<h4>Giới thiệu</h4>}  img={<img src="/images/banner2.jpeg" />} />
+      <Banner left={<h4>Giới thiệu</h4>} img={<img src="/images/banner2.jpeg" />} />
 
       <Breadcrumb links={[
         {
@@ -49,7 +49,9 @@ export default function Home() {
           <div className="row">
             {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
               <div className="product-item">
-                <img src="/images/product.png" />
+                <Link href="/gioi-thieu/doi-ngu-bac-sy">
+                  <img src="/images/product.png" />
+                </Link>
                 <Link href="/gioi-thieu/doi-ngu-bac-sy">
                   <h5>ĐỘI NGŨ BÁC SỸ</h5>
                 </Link>
@@ -97,13 +99,15 @@ export default function Home() {
           </div>
 
           <div className="sliders">
-            {[1, 2, 3, 4,5,6,7,8].map(a => <div className="px-1" key={a}>
+            {[1, 2, 3, 4, 5, 6, 7, 8].map(a => <div className="px-1" key={a}>
               <div className="product-item">
-                <img src="/images/banner1.jpeg" />
-                <a>
+                <Link href="/gioi-thieu/doi-ngu-bac-sy/bac-sy-tran-tuan">
+                  <img src="/images/banner1.jpeg" />
+                </Link>
+                <Link href="/gioi-thieu/doi-ngu-bac-sy/bac-sy-tran-tuan">
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
                     TRÌNH THOÁI HOÁ KHỚP</h5>
-                </a>
+                </Link>
 
                 <p>Chiropractic không phải là một phương pháp
                   xuất hiện gần đây mà thực sự là một chuyên

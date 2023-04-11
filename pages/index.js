@@ -19,10 +19,10 @@ export default function Home() {
         <p>Trị liệu thần kinh cột sống hay còn gọi là công nghệ Chiropractic được xem là
           phương pháp chỉ định đầu tiên (...)</p>
 
-        <button className="btn btn-primary">XEM CHI TIẾT</button></>} 
-        
+        <button className="btn btn-primary">XEM CHI TIẾT</button></>}
+
         img={<img src="/images/banner1.jpeg" />}
-        />
+      />
       <section className="home-cell-root py-8">
         <div className="container">
 
@@ -39,7 +39,9 @@ export default function Home() {
           <div className="row mb-4">
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
-                <img src="/images/product.png" />
+                <Link href='/dich-vu/te-bao-goc/tri-lieu-than-kinh'>
+                  <img src="/images/product.png" />
+                </Link>
                 <Link href='/dich-vu/te-bao-goc/tri-lieu-than-kinh'>
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
                     TRÌNH THOÁI HOÁ KHỚP</h5>
@@ -77,7 +79,9 @@ export default function Home() {
           <div className="row mb-4">
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
-                <img src="/images/product.png" />
+                <Link href="/dich-vu/vat-ly-tri-lieu/tri-lieu-than-kinh">
+                  <img src="/images/product.png" />
+                </Link>
 
                 <Link href="/dich-vu/vat-ly-tri-lieu/tri-lieu-than-kinh">
 
@@ -115,7 +119,9 @@ export default function Home() {
           <div className="row mb-4">
             {[1, 2, 3].map(a => <div className="col-md-4 col-12" key={a}>
               <div className="product-item">
-                <img src="/images/doctor-2.jpeg" />
+                <Link href="/gioi-thieu/doi-ngu-bac-sy/bs-tran-tuan">
+                  <img src="/images/doctor-2.jpeg" />
+                </Link>
                 <Link href="/gioi-thieu/doi-ngu-bac-sy/bs-tran-tuan">
                   <h5>DR. HO NGOC HUY</h5>
                 </Link>
@@ -182,7 +188,9 @@ export default function Home() {
           <div className="sliders">
             {[1, 2, 3, 4, 5, 6, 7, 8].map(a => <div key={a} className="px-1">
               <div className="product-item">
-                <img src="/images/banner1.jpeg" />
+                <Link href="/tin-tuc/te-bao-goc-la-gi">
+                  <img src="/images/banner1.jpeg" />
+                </Link>
 
                 <Link href="/tin-tuc/te-bao-goc-la-gi">
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
@@ -214,7 +222,9 @@ export default function Home() {
           <div className="sliders">
             {[1, 2, 3, 4, 5, 6, 7, 8].map(a => <div key={a} className="px-1">
               <div className="product-item">
-                <img src="/images/banner1.jpeg" />
+                <Link href="/tin-tuc/te-bao-goc-la-gi">
+                  <img src="/images/banner1.jpeg" />
+                </Link>
 
                 <Link href="/tin-tuc/te-bao-goc-la-gi">
                   <h5>PHỤC HỒI VÀ NGĂN CHẶN QUÁ
@@ -225,7 +235,7 @@ export default function Home() {
                   xuất hiện gần đây mà thực sự là một chuyên
                   ngành với nguồn gốc (...)</p>
 
-                  <p className="date">03 | 10 | 2021</p>
+                <p className="date">03 | 10 | 2021</p>
               </div>
             </div>)}
           </div>
@@ -246,7 +256,9 @@ export default function Home() {
           <div className="sliders mb-2">
             {[1, 2, 3, 4, 5, 6, 7, 8].map(a => <div key={a} className="px-1">
               <div className="product-item">
-                <img src="/images/banner1.jpeg" />
+                <a href="https://www.youtube.com/watch?v=IhqKS1PBovQ&ab_channel=BGMGhibliStudio" target="_blank">
+                  <img src="/images/banner1.jpeg" />
+                </a>
                 <a href="https://www.youtube.com/watch?v=IhqKS1PBovQ&ab_channel=BGMGhibliStudio" target="_blank">
                   <img src="/img/video.svg" className="icon-video" />
                 </a>

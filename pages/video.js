@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function ContactPage() {
     return <main className="page">
         <Header tab="video" />
-        <Banner left={<h4>Video</h4>} img={<img src="/images/banner1.jpeg" />}/>
+        <Banner left={<h4>Video</h4>} img={<img src="/images/banner1.jpeg" />} />
         <Breadcrumb links={[{
             name: 'Trang chủ',
             link: '/'
@@ -32,7 +32,9 @@ export default function ContactPage() {
                 <div className="row">
                     {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
                         <div className="product-item">
-                            <img src="/images/banner1.jpeg" />
+                            <a href="https://www.youtube.com/watch?v=IhqKS1PBovQ&ab_channel=BGMGhibliStudio" target="_blank">
+                                <img src="/images/banner1.jpeg" />
+                            </a>
                             <a href="https://www.youtube.com/watch?v=IhqKS1PBovQ&ab_channel=BGMGhibliStudio" target="_blank">
                                 <img src="/img/video.svg" className="icon-video" />
                             </a>
