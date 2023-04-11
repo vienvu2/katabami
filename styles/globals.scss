@@ -104,7 +104,7 @@ a {
 
 
   &:hover {
-   
+
     // text-decoration: underline;
     // text-decoration-color: #F0B516;
   }
@@ -660,6 +660,7 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
     color: #555555;
     margin-bottom: 12px;
     transition: all 0.3s linear;
+
     &:hover {
       color: #F7991C;
       transition: all 0.3s linear;
@@ -875,6 +876,10 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 }
 
 .service-detail {
+  * {
+    transition: all 0.3s linear;
+  }
+
   .service-detail-item {
 
     .service-detail-inner {
@@ -897,13 +902,11 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
       font-size: 40px;
       line-height: 48px;
       font-weight: 300;
-
-
     }
 
     .service-detail-content {
-      display: none;
-      padding: 24px 0;
+      max-height: 0;
+      overflow: hidden;
     }
 
     .service-detail-main {
@@ -919,8 +922,10 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
       flex: 1;
 
       img {
-        display: none;
         border-radius: 6px;
+        max-height: 0;
+        width: 100%;
+        object-fit: cover;
 
       }
     }
@@ -938,16 +943,18 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
         position: absolute;
         background: linear-gradient(90deg, #FCB912 0%, #F7991C 99.98%);
         top: 27px;
+        transition: all 0.3s linear;
         left: 0;
       }
 
       &::before {
-        // content: '';
-        height: 60px;
+        content: '';
+        height: 4px;
         width: 4px;
         position: absolute;
         background: linear-gradient(90deg, #FCB912 0%, #F7991C 99.98%);
-        top: 0px;
+        transition: all 0.3s linear;
+        top: 27px;
         left: 30px;
       }
     }
@@ -959,6 +966,8 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
         &::before {
           content: '';
+          height: 60px;
+          top: 0;
         }
       }
 
@@ -973,11 +982,15 @@ $cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
 
       .service-detail-content {
         display: block;
+        max-height: 1000px;
+      padding: 24px 0;
+
       }
 
       .service-detail-image {
         img {
           display: block;
+          max-height: 700px;
 
         }
       }
