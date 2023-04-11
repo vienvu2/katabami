@@ -49,11 +49,6 @@ a {
     cursor: pointer
 }
 
-a:hover {
-    text-decoration: underline;
-    text-decoration-color: #f0b516
-}
-
 p {
     margin-bottom: 12px
 }
@@ -1338,11 +1333,13 @@ img {
     font-size: 24px;
     line-height: 29px;
     color: #555;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    transition: all .3s linear
 }
 
 .product-item h5:hover {
-    color: #f7991c
+    color: #f7991c;
+    transition: all .3s linear
 }
 
 .product-item img {
@@ -1526,6 +1523,10 @@ img {
     font-size: 16px
 }
 
+.service-detail * {
+    transition: all .3s linear
+}
+
 .service-detail .service-detail-item .service-detail-inner {
     display: flex;
     gap: 40px;
@@ -1546,8 +1547,8 @@ img {
 }
 
 .service-detail .service-detail-item .service-detail-content {
-    display: none;
-    padding: 24px 0
+    max-height: 0;
+    overflow: hidden
 }
 
 .service-detail .service-detail-item .service-detail-main {
@@ -1563,8 +1564,11 @@ img {
 }
 
 .service-detail .service-detail-item .service-detail-image img {
-    display: none;
-    border-radius: 6px
+    border-radius: 6px;
+    max-height: 0;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .service-detail .service-detail-item .service-detail-plus {
@@ -1575,21 +1579,22 @@ img {
 }
 
 .service-detail .service-detail-item .service-detail-plus:after {
-    content: "";
-    height: 4px;
     width: 60px;
-    position: absolute;
-    background: linear-gradient(90deg, #fcb912, #f7991c 99.98%);
-    top: 27px;
     left: 0
 }
 
+.service-detail .service-detail-item .service-detail-plus:after,
 .service-detail .service-detail-item .service-detail-plus:before {
-    height: 60px;
-    width: 4px;
+    content: "";
+    height: 4px;
     position: absolute;
     background: linear-gradient(90deg, #fcb912, #f7991c 99.98%);
-    top: 0;
+    top: 27px;
+    transition: all .3s linear
+}
+
+.service-detail .service-detail-item .service-detail-plus:before {
+    width: 4px;
     left: 30px
 }
 
@@ -1598,7 +1603,9 @@ img {
 }
 
 .service-detail .service-detail-item.active .service-detail-plus:before {
-    content: ""
+    content: "";
+    height: 60px;
+    top: 0
 }
 
 .service-detail .service-detail-item.active .service-detail-title {
@@ -1610,9 +1617,15 @@ img {
     border: none
 }
 
-.service-detail .service-detail-item.active .service-detail-content,
+.service-detail .service-detail-item.active .service-detail-content {
+    display: block;
+    max-height: 1000px;
+    padding: 24px 0
+}
+
 .service-detail .service-detail-item.active .service-detail-image img {
-    display: block
+    display: block;
+    max-height: 700px
 }
 
 .menu-mobile {
