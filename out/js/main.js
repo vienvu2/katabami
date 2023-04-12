@@ -1,5 +1,3 @@
-setTimeout(() => {
-
     $(document).ready(function () {
         console.log("ready!");
         $('.tabs .tab').click(function () {
@@ -94,4 +92,3 @@ setTimeout(() => {
         }
 
     })
-}, 2000)
