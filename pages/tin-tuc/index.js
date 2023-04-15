@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function ContactPage() {
     return <main className="page">
         <Header tab="tin-tuc" />
-        <Banner left={<h4>Tin tức</h4>} img={<img src="/images/banner3.jpeg" />} />
+        <Banner left={<h4>Tin tức</h4>} img={<img alt="image" src="/images/banner3.jpeg" />} />
         <Breadcrumb links={[{
             name: 'Trang chủ',
             link: '/'
@@ -33,7 +33,7 @@ export default function ContactPage() {
                     {[1, 2, 3, 4, 5, 6, 6, 8, 9, 10, 11, 12].map(a => <div className="col-md-3 col-12 mb-4" key={a}>
                         <div className="product-item">
                             <Link href="/tin-tuc/te-bao-goc-la-gi">
-                                <img src="/images/banner1.jpeg" />
+                                <img alt="image" src="/images/banner1.jpeg" />
                             </Link>
 
                             <Link href="/tin-tuc/te-bao-goc-la-gi">

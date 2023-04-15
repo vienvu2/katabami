@@ -35,7 +35,7 @@ export default function NewsDetailPage() {
 
                             <p className="date">By: Katabami Clinic | March 31 2023</p>
 
-                            <img src="/images/banner1.jpeg" />
+                            <img alt="image" src="/images/banner1.jpeg" />
 
                             <h4>Tế bào gốc là gì?</h4>
                             <p>
@@ -50,7 +50,7 @@ export default function NewsDetailPage() {
                                 xương. Tại đây, chúng sẽ tăng sinh và phát triển thành các tế bào máu mới thay thế cho các tế bào cũ
                                 bị khiếm khuyết.
                             </p>
-                            <img src="/images/banner1.jpeg" />
+                            <img alt="image" src="/images/banner1.jpeg" />
                             <p className="alt">Công dụng của tế bào gốc được ứng dụng trong nhiều lĩnh vực y khoa khác nhau
                             </p>
                             <h4 >Tế bào gốc là gì?</h4>
@@ -75,7 +75,7 @@ export default function NewsDetailPage() {
                             <div className="product-items">
                                 {[1, 2, 3, 4, 5].map(a => <div className="product-item" key={a}>
                                     <Link href="/tin-tuc/te-bao-goc-la-gi">
-                                        <img src="/images/banner1.jpeg" />
+                                        <img alt="image" src="/images/banner1.jpeg" />
                                     </Link>
                                     <Link href="/tin-tuc/te-bao-goc-la-gi">
                                         <h5>BS TRAN TUAN</h5>
@@ -86,12 +86,12 @@ export default function NewsDetailPage() {
                             </div>
                             <div className="text-center">
                                 <a className="product-items-prev">
-                                    <img src="/img/prev.svg" />
+                                    <img alt="image" src="/img/prev.svg" />
                                 </a>
                                 &nbsp;
                                 &nbsp;
                                 <a className="product-items-next">
-                                    <img src="/img/next.svg" />
+                                    <img alt="image" src="/img/next.svg" />
                                 </a>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ export default function NewsDetailPage() {
                             <h4 className="title mb-3">Tin tức khác</h4>
                             {[1, 2, 3, 4].map(a => <div className="product-item mb-2" key={a}>
                                 <Link href="/tin-tuc/te-bao-goc-la-gi">
-                                    <img src="/images/banner1.jpeg" />
+                                    <img alt="image" src="/images/banner1.jpeg" />
                                 </Link>
                                 <Link href="/tin-tuc/te-bao-goc-la-gi">
                                     <h5>BS TRAN TUAN</h5>

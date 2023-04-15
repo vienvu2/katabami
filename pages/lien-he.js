@@ -7,7 +7,7 @@ import Header from "@/src/layouts/header";
 export default function ContactPage() {
     return <main className="page page-contract">
         <Header tab="lien-he" />
-        <Banner left={<h4>Liên hệ</h4>} img={<img src="/images/banner3.jpeg" />} />
+        <Banner left={<h4>Liên hệ</h4>} img={<img alt="image" src="/images/banner3.jpeg" />} />
 
         <Breadcrumb links={[
             {
@@ -40,7 +40,7 @@ export default function ContactPage() {
                 </div>
             </div>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9518872122876!2d106.66861331513128!3d10.814993992295395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175291f295b0337%3A0xc92b056244175af6!2zMi8xMyBC4bqhY2ggxJDhurFuZywgUGjGsOG7nW5nIDIsIFTDom4gQsOsbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCA3MzY0NjQsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1680938496014!5m2!1svi!2s" width="100%" height="700" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9518872122876!2d106.66861331513128!3d10.814993992295395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175291f295b0337%3A0xc92b056244175af6!2zMi8xMyBC4bqhY2ggxJDhurFuZywgUGjGsOG7nW5nIDIsIFTDom4gQsOsbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCA3MzY0NjQsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1680938496014!5m2!1svi!2s"   height="700" style={{ border: 0, width: '100%' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
 
             </iframe>
         </section>

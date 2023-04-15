@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="container">
             <div className="row">
                 <div className="col-md-3 col-12 mb-6">
-                    <div className="mb-4"><img src="/img/logo.svg" /></div>
+                    <div className="mb-4"><img alt="image" src="/img/logo.svg" /></div>
 
                     <p>Là một trong những trung tâm điều trị cơ xương khớp
                         chuẩn Mỹ hàng đầu tại Việt Nam, Katabami Clinic không
@@ -113,22 +113,22 @@ export default function Footer() {
                 <div className="col-md-12 col-12 text-center">
                     <div className="socials">
                         <a href="https://facebook.com" target="_blank">
-                            <img src="/img/ic-fb.svg" />
+                            <img alt="image" src="/img/ic-fb.svg" />
                         </a>
                         <a href="https://facebook.com" target="_blank">
-                            <img src="/img/ic-in.svg" />
+                            <img alt="image" src="/img/ic-in.svg" />
                         </a>
                         <a href="https://facebook.com" target="_blank">
-                            <img src="/img/ic-tw.svg" />
+                            <img alt="image" src="/img/ic-tw.svg" />
                         </a>
                         <a href="https://facebook.com" target="_blank">
-                            <img src="/img/ic-yt.svg" />
+                            <img alt="image" src="/img/ic-yt.svg" />
                         </a>
                         <a href="https://facebook.com" target="_blank">
-                            <img src="/img/ic-link.svg" />
+                            <img alt="image" src="/img/ic-link.svg" />
                         </a>
                         <a href="https://facebook.com" target="_blank">
-                            <img src="/img/ic-tt.svg" />
+                            <img alt="image" src="/img/ic-tt.svg" />
                         </a>
                     </div>
                     <div>

@@ -9,7 +9,7 @@ export default function Contact() {
                     <p className="mb-2">Vui lòng cung cấp thông tin,
                         bộ phận CSKH sẽ liên hệ lại trong thời gian sớm nhất</p>
 
-                    <a className="phone">028 345 678 9</a>
+                    <a href="tel:0283456789" className="phone">028 345 678 9</a>
                 </div>
                 <div className="col-md-6 col-12 pt-4">
 

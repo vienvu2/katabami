@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Intro() {
     return <main className="page">
         <Header tab="gioi-thieu" />
-        <Banner left={<h4>Giới thiệu</h4>} img={<img src="/images/banner2.jpeg" />} />
+        <Banner left={<h4>Giới thiệu</h4>} img={<img alt="image" src="/images/banner2.jpeg" />} />
 
         <Breadcrumb links={[
             {
@@ -44,7 +44,7 @@ export default function Intro() {
                     {[1, 2, 3, 4, 5, 6].map(a => <div className="col-md-4 col-12 mb-4" key={a}>
                         <div className="product-item">
                             <Link href="/gioi-thieu/doi-ngu-bac-sy/bac-sy-tran-tuan">
-                                <img src="/images/doctor-2.jpeg" />
+                                <img alt="image" src="/images/doctor-2.jpeg" />
                             </Link>
                             <Link href="/gioi-thieu/doi-ngu-bac-sy/bac-sy-tran-tuan">
                                 <h5>BS TRAN TUAN</h5>

@@ -5,7 +5,7 @@ export default function Header({ tab, className }) {
         <div className="logo">
             <Link href="/">
                 {
-                    className ? <img src="/img/logo2.svg" /> : <img src="/img/logo.svg" />
+                    className ? <img alt="image" src="/img/logo2.svg" /> : <img alt="image" src="/img/logo.svg" />
                 }
 
             </Link>
@@ -44,7 +44,7 @@ export default function Header({ tab, className }) {
         </div>
 
         <div className="menu-mobile">
-            <img src="/img/menu.svg" />
+            <img alt="image" src="/img/menu.svg" />
         </div>
 
         <div className="menu-sider">

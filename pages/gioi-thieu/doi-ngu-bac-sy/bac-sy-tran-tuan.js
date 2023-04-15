@@ -7,7 +7,7 @@ import Header from "@/src/layouts/header";
 export default function IntroItem() {
     return <main className="page">
         <Header />
-        <Banner left={<h4>Giới thiệu</h4>}  img={<img src="/images/banner2.jpeg" />} />
+        <Banner left={<h4>Giới thiệu</h4>}  img={<img alt="image" src="/images/banner2.jpeg" />} />
 
         <Breadcrumb links={[
             {
@@ -31,7 +31,7 @@ export default function IntroItem() {
             <div className="container ">
                 <div className="row">
                     <div className="col-md-4 col-12 mb-4">
-                        <img src="/images/doctor-2.jpeg" />
+                        <img alt="image" src="/images/doctor-2.jpeg" />
                         <h3 className="title">Kinh nghiệm</h3>
                     </div>
                     <div className="col-md-8 col-12 mb-4">
@@ -60,7 +60,7 @@ export default function IntroItem() {
                         <p>
                             Giám đốc Trung tâm Tế bào gốc, Katabami Clinic.</p>
 
-                        <img src="/images/banner1.jpeg" />
+                        <img alt="image" src="/images/banner1.jpeg" />
                     </div>
                     <div className="col-md-4  col-12 mb-4">
                         <h3 className="title">Thành tựu</h3>
